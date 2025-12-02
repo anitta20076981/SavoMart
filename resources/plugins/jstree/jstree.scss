@@ -1,0 +1,21 @@
+@import '~jstree/dist/themes/default/style.css';
+.jstree-default .jstree-node,
+.jstree-default .jstree-icon {
+    background-image: url(/images/admin/jstree/32px.png);
+}
+
+.jstree-default .jstree-wholerow-clicked {
+    background: #00000000;
+    background: -webkit-linear-gradient(top, #00000000 0%, #00000000 100%);
+    background: linear-gradient(to bottom, #00000000 0%, #00000000 100%);
+}
+
+.jstree-default-responsive .jstree-wholerow-clicked {
+    background: #00000000;
+}
+
+.jstree-default .jstree-clicked {
+    background: #00000000;
+    border-radius: 2px;
+    box-shadow: inset 0 0 1px #999999;
+}

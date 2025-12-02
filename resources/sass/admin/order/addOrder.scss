@@ -1,0 +1,13 @@
+@import '../../../plugins/datatable/datatable.scss';
+.order-address-cont {
+    border-radius: 0.475rem !important;
+}
+
+div.dataTables_scrollBody {
+    border-left: 0 !important;
+}
+
+.div_erro{
+    color: red;
+    font-size: smaller;
+}

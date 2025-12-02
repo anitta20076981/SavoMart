@@ -1,0 +1,1685 @@
+[{
+        "timezone": "America/Eirunepe",
+        "name": "Acre Standard Time (America/Eirunepe)"
+    },
+    {
+        "timezone": "America/Rio_Branco",
+        "name": "Acre Standard Time (America/Rio_Branco)"
+    },
+    {
+        "timezone": "Asia/Kabul",
+        "name": "Afghanistan Time (Asia/Kabul)"
+    },
+    {
+        "timezone": "America/Anchorage",
+        "name": "Alaska Standard Time (America/Anchorage)"
+    },
+    {
+        "timezone": "America/Juneau",
+        "name": "Alaska Standard Time (America/Juneau)"
+    },
+    {
+        "timezone": "America/Metlakatla",
+        "name": "Alaska Standard Time (America/Metlakatla)"
+    },
+    {
+        "timezone": "America/Nome",
+        "name": "Alaska Standard Time (America/Nome)"
+    },
+    {
+        "timezone": "America/Sitka",
+        "name": "Alaska Standard Time (America/Sitka)"
+    },
+    {
+        "timezone": "America/Yakutat",
+        "name": "Alaska Standard Time (America/Yakutat)"
+    },
+    {
+        "timezone": "America/Boa_Vista",
+        "name": "Amazon Standard Time (America/Boa_Vista)"
+    },
+    {
+        "timezone": "America/Campo_Grande",
+        "name": "Amazon Standard Time (America/Campo_Grande)"
+    },
+    {
+        "timezone": "America/Cuiaba",
+        "name": "Amazon Standard Time (America/Cuiaba)"
+    },
+    {
+        "timezone": "America/Manaus",
+        "name": "Amazon Standard Time (America/Manaus)"
+    },
+    {
+        "timezone": "America/Porto_Velho",
+        "name": "Amazon Standard Time (America/Porto_Velho)"
+    },
+    {
+        "timezone": "Asia/Anadyr",
+        "name": "Anadyr Standard Time (Asia/Anadyr)"
+    },
+    {
+        "timezone": "Pacific/Apia",
+        "name": "Apia Standard Time (Pacific/Apia)"
+    },
+    {
+        "timezone": "Asia/Aden",
+        "name": "Arabian Standard Time (Asia/Aden)"
+    },
+    {
+        "timezone": "Asia/Baghdad",
+        "name": "Arabian Standard Time (Asia/Baghdad)"
+    },
+    {
+        "timezone": "Asia/Bahrain",
+        "name": "Arabian Standard Time (Asia/Bahrain)"
+    },
+    {
+        "timezone": "Asia/Kuwait",
+        "name": "Arabian Standard Time (Asia/Kuwait)"
+    },
+    {
+        "timezone": "Asia/Qatar",
+        "name": "Arabian Standard Time (Asia/Qatar)"
+    },
+    {
+        "timezone": "Asia/Riyadh",
+        "name": "Arabian Standard Time (Asia/Riyadh)"
+    },
+    {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "name": "Argentina Standard Time (America/Argentina/Buenos_Aires)"
+    },
+    {
+        "timezone": "America/Argentina/Catamarca",
+        "name": "Argentina Standard Time (America/Argentina/Catamarca)"
+    },
+    {
+        "timezone": "America/Argentina/Cordoba",
+        "name": "Argentina Standard Time (America/Argentina/Cordoba)"
+    },
+    {
+        "timezone": "America/Argentina/Jujuy",
+        "name": "Argentina Standard Time (America/Argentina/Jujuy)"
+    },
+    {
+        "timezone": "America/Argentina/La_Rioja",
+        "name": "Argentina Standard Time (America/Argentina/La_Rioja)"
+    },
+    {
+        "timezone": "America/Argentina/Mendoza",
+        "name": "Argentina Standard Time (America/Argentina/Mendoza)"
+    },
+    {
+        "timezone": "America/Argentina/Rio_Gallegos",
+        "name": "Argentina Standard Time (America/Argentina/Rio_Gallegos)"
+    },
+    {
+        "timezone": "America/Argentina/Salta",
+        "name": "Argentina Standard Time (America/Argentina/Salta)"
+    },
+    {
+        "timezone": "America/Argentina/San_Juan",
+        "name": "Argentina Standard Time (America/Argentina/San_Juan)"
+    },
+    {
+        "timezone": "America/Argentina/Tucuman",
+        "name": "Argentina Standard Time (America/Argentina/Tucuman)"
+    },
+    {
+        "timezone": "America/Argentina/Ushuaia",
+        "name": "Argentina Standard Time (America/Argentina/Ushuaia)"
+    },
+    {
+        "timezone": "Asia/Yerevan",
+        "name": "Armenia Standard Time (Asia/Yerevan)"
+    },
+    {
+        "timezone": "America/Anguilla",
+        "name": "Atlantic Standard Time (America/Anguilla)"
+    },
+    {
+        "timezone": "America/Antigua",
+        "name": "Atlantic Standard Time (America/Antigua)"
+    },
+    {
+        "timezone": "America/Aruba",
+        "name": "Atlantic Standard Time (America/Aruba)"
+    },
+    {
+        "timezone": "America/Barbados",
+        "name": "Atlantic Standard Time (America/Barbados)"
+    },
+    {
+        "timezone": "America/Blanc-Sablon",
+        "name": "Atlantic Standard Time (America/Blanc-Sablon)"
+    },
+    {
+        "timezone": "America/Curacao",
+        "name": "Atlantic Standard Time (America/Curacao)"
+    },
+    {
+        "timezone": "America/Dominica",
+        "name": "Atlantic Standard Time (America/Dominica)"
+    },
+    {
+        "timezone": "America/Glace_Bay",
+        "name": "Atlantic Standard Time (America/Glace_Bay)"
+    },
+    {
+        "timezone": "America/Goose_Bay",
+        "name": "Atlantic Standard Time (America/Goose_Bay)"
+    },
+    {
+        "timezone": "America/Grenada",
+        "name": "Atlantic Standard Time (America/Grenada)"
+    },
+    {
+        "timezone": "America/Guadeloupe",
+        "name": "Atlantic Standard Time (America/Guadeloupe)"
+    },
+    {
+        "timezone": "America/Halifax",
+        "name": "Atlantic Standard Time (America/Halifax)"
+    },
+    {
+        "timezone": "America/Kralendijk",
+        "name": "Atlantic Standard Time (America/Kralendijk)"
+    },
+    {
+        "timezone": "America/Lower_Princes",
+        "name": "Atlantic Standard Time (America/Lower_Princes)"
+    },
+    {
+        "timezone": "America/Marigot",
+        "name": "Atlantic Standard Time (America/Marigot)"
+    },
+    {
+        "timezone": "America/Martinique",
+        "name": "Atlantic Standard Time (America/Martinique)"
+    },
+    {
+        "timezone": "America/Moncton",
+        "name": "Atlantic Standard Time (America/Moncton)"
+    },
+    {
+        "timezone": "America/Montserrat",
+        "name": "Atlantic Standard Time (America/Montserrat)"
+    },
+    {
+        "timezone": "America/Port_of_Spain",
+        "name": "Atlantic Standard Time (America/Port_of_Spain)"
+    },
+    {
+        "timezone": "America/Puerto_Rico",
+        "name": "Atlantic Standard Time (America/Puerto_Rico)"
+    },
+    {
+        "timezone": "America/Santo_Domingo",
+        "name": "Atlantic Standard Time (America/Santo_Domingo)"
+    },
+    {
+        "timezone": "America/St_Barthelemy",
+        "name": "Atlantic Standard Time (America/St_Barthelemy)"
+    },
+    {
+        "timezone": "America/St_Kitts",
+        "name": "Atlantic Standard Time (America/St_Kitts)"
+    },
+    {
+        "timezone": "America/St_Lucia",
+        "name": "Atlantic Standard Time (America/St_Lucia)"
+    },
+    {
+        "timezone": "America/St_Thomas",
+        "name": "Atlantic Standard Time (America/St_Thomas)"
+    },
+    {
+        "timezone": "America/St_Vincent",
+        "name": "Atlantic Standard Time (America/St_Vincent)"
+    },
+    {
+        "timezone": "America/Thule",
+        "name": "Atlantic Standard Time (America/Thule)"
+    },
+    {
+        "timezone": "America/Tortola",
+        "name": "Atlantic Standard Time (America/Tortola)"
+    },
+    {
+        "timezone": "Atlantic/Bermuda",
+        "name": "Atlantic Standard Time (Atlantic/Bermuda)"
+    },
+    {
+        "timezone": "Australia/Adelaide",
+        "name": "Australian Central Standard Time (Australia/Adelaide)"
+    },
+    {
+        "timezone": "Australia/Broken_Hill",
+        "name": "Australian Central Standard Time (Australia/Broken_Hill)"
+    },
+    {
+        "timezone": "Australia/Darwin",
+        "name": "Australian Central Standard Time (Australia/Darwin)"
+    },
+    {
+        "timezone": "Australia/Eucla",
+        "name": "Australian Central Western Standard Time (Australia/Eucla)"
+    },
+    {
+        "timezone": "Australia/Brisbane",
+        "name": "Australian Eastern Standard Time (Australia/Brisbane)"
+    },
+    {
+        "timezone": "Australia/Hobart",
+        "name": "Australian Eastern Standard Time (Australia/Hobart)"
+    },
+    {
+        "timezone": "Australia/Lindeman",
+        "name": "Australian Eastern Standard Time (Australia/Lindeman)"
+    },
+    {
+        "timezone": "Australia/Melbourne",
+        "name": "Australian Eastern Standard Time (Australia/Melbourne)"
+    },
+    {
+        "timezone": "Australia/Sydney",
+        "name": "Australian Eastern Standard Time (Australia/Sydney)"
+    },
+    {
+        "timezone": "Antarctica/Casey",
+        "name": "Australian Western Standard Time (Antarctica/Casey)"
+    },
+    {
+        "timezone": "Australia/Perth",
+        "name": "Australian Western Standard Time (Australia/Perth)"
+    },
+    {
+        "timezone": "Asia/Baku",
+        "name": "Azerbaijan Standard Time (Asia/Baku)"
+    },
+    {
+        "timezone": "Atlantic/Azores",
+        "name": "Azores Standard Time (Atlantic/Azores)"
+    },
+    {
+        "timezone": "Asia/Dhaka",
+        "name": "Bangladesh Standard Time (Asia/Dhaka)"
+    },
+    {
+        "timezone": "Asia/Thimphu",
+        "name": "Bhutan Time (Asia/Thimphu)"
+    },
+    {
+        "timezone": "America/La_Paz",
+        "name": "Bolivia Time (America/La_Paz)"
+    },
+    {
+        "timezone": "America/Araguaina",
+        "name": "Brasilia Standard Time (America/Araguaina)"
+    },
+    {
+        "timezone": "America/Bahia",
+        "name": "Brasilia Standard Time (America/Bahia)"
+    },
+    {
+        "timezone": "America/Belem",
+        "name": "Brasilia Standard Time (America/Belem)"
+    },
+    {
+        "timezone": "America/Fortaleza",
+        "name": "Brasilia Standard Time (America/Fortaleza)"
+    },
+    {
+        "timezone": "America/Maceio",
+        "name": "Brasilia Standard Time (America/Maceio)"
+    },
+    {
+        "timezone": "America/Recife",
+        "name": "Brasilia Standard Time (America/Recife)"
+    },
+    {
+        "timezone": "America/Santarem",
+        "name": "Brasilia Standard Time (America/Santarem)"
+    },
+    {
+        "timezone": "America/Sao_Paulo",
+        "name": "Brasilia Standard Time (America/Sao_Paulo)"
+    },
+    {
+        "timezone": "Asia/Brunei",
+        "name": "Brunei Darussalam Time (Asia/Brunei)"
+    },
+    {
+        "timezone": "Atlantic/Cape_Verde",
+        "name": "Cape Verde Standard Time (Atlantic/Cape_Verde)"
+    },
+    {
+        "timezone": "Africa/Blantyre",
+        "name": "Central Africa Time (Africa/Blantyre)"
+    },
+    {
+        "timezone": "Africa/Bujumbura",
+        "name": "Central Africa Time (Africa/Bujumbura)"
+    },
+    {
+        "timezone": "Africa/Gaborone",
+        "name": "Central Africa Time (Africa/Gaborone)"
+    },
+    {
+        "timezone": "Africa/Harare",
+        "name": "Central Africa Time (Africa/Harare)"
+    },
+    {
+        "timezone": "Africa/Khartoum",
+        "name": "Central Africa Time (Africa/Khartoum)"
+    },
+    {
+        "timezone": "Africa/Kigali",
+        "name": "Central Africa Time (Africa/Kigali)"
+    },
+    {
+        "timezone": "Africa/Lubumbashi",
+        "name": "Central Africa Time (Africa/Lubumbashi)"
+    },
+    {
+        "timezone": "Africa/Lusaka",
+        "name": "Central Africa Time (Africa/Lusaka)"
+    },
+    {
+        "timezone": "Africa/Maputo",
+        "name": "Central Africa Time (Africa/Maputo)"
+    },
+    {
+        "timezone": "Africa/Windhoek",
+        "name": "Central Africa Time (Africa/Windhoek)"
+    },
+    {
+        "timezone": "Africa/Algiers",
+        "name": "Central European Standard Time (Africa/Algiers)"
+    },
+    {
+        "timezone": "Africa/Ceuta",
+        "name": "Central European Standard Time (Africa/Ceuta)"
+    },
+    {
+        "timezone": "Africa/Tunis",
+        "name": "Central European Standard Time (Africa/Tunis)"
+    },
+    {
+        "timezone": "Arctic/Longyearbyen",
+        "name": "Central European Standard Time (Arctic/Longyearbyen)"
+    },
+    {
+        "timezone": "Europe/Amsterdam",
+        "name": "Central European Standard Time (Europe/Amsterdam)"
+    },
+    {
+        "timezone": "Europe/Andorra",
+        "name": "Central European Standard Time (Europe/Andorra)"
+    },
+    {
+        "timezone": "Europe/Belgrade",
+        "name": "Central European Standard Time (Europe/Belgrade)"
+    },
+    {
+        "timezone": "Europe/Berlin",
+        "name": "Central European Standard Time (Europe/Berlin)"
+    },
+    {
+        "timezone": "Europe/Bratislava",
+        "name": "Central European Standard Time (Europe/Bratislava)"
+    },
+    {
+        "timezone": "Europe/Brussels",
+        "name": "Central European Standard Time (Europe/Brussels)"
+    },
+    {
+        "timezone": "Europe/Budapest",
+        "name": "Central European Standard Time (Europe/Budapest)"
+    },
+    {
+        "timezone": "Europe/Busingen",
+        "name": "Central European Standard Time (Europe/Busingen)"
+    },
+    {
+        "timezone": "Europe/Copenhagen",
+        "name": "Central European Standard Time (Europe/Copenhagen)"
+    },
+    {
+        "timezone": "Europe/Gibraltar",
+        "name": "Central European Standard Time (Europe/Gibraltar)"
+    },
+    {
+        "timezone": "Europe/Ljubljana",
+        "name": "Central European Standard Time (Europe/Ljubljana)"
+    },
+    {
+        "timezone": "Europe/Luxembourg",
+        "name": "Central European Standard Time (Europe/Luxembourg)"
+    },
+    {
+        "timezone": "Europe/Madrid",
+        "name": "Central European Standard Time (Europe/Madrid)"
+    },
+    {
+        "timezone": "Europe/Malta",
+        "name": "Central European Standard Time (Europe/Malta)"
+    },
+    {
+        "timezone": "Europe/Monaco",
+        "name": "Central European Standard Time (Europe/Monaco)"
+    },
+    {
+        "timezone": "Europe/Oslo",
+        "name": "Central European Standard Time (Europe/Oslo)"
+    },
+    {
+        "timezone": "Europe/Paris",
+        "name": "Central European Standard Time (Europe/Paris)"
+    },
+    {
+        "timezone": "Europe/Podgorica",
+        "name": "Central European Standard Time (Europe/Podgorica)"
+    },
+    {
+        "timezone": "Europe/Prague",
+        "name": "Central European Standard Time (Europe/Prague)"
+    },
+    {
+        "timezone": "Europe/Rome",
+        "name": "Central European Standard Time (Europe/Rome)"
+    },
+    {
+        "timezone": "Europe/San_Marino",
+        "name": "Central European Standard Time (Europe/San_Marino)"
+    },
+    {
+        "timezone": "Europe/Sarajevo",
+        "name": "Central European Standard Time (Europe/Sarajevo)"
+    },
+    {
+        "timezone": "Europe/Skopje",
+        "name": "Central European Standard Time (Europe/Skopje)"
+    },
+    {
+        "timezone": "Europe/Stockholm",
+        "name": "Central European Standard Time (Europe/Stockholm)"
+    },
+    {
+        "timezone": "Europe/Tirane",
+        "name": "Central European Standard Time (Europe/Tirane)"
+    },
+    {
+        "timezone": "Europe/Vaduz",
+        "name": "Central European Standard Time (Europe/Vaduz)"
+    },
+    {
+        "timezone": "Europe/Vatican",
+        "name": "Central European Standard Time (Europe/Vatican)"
+    },
+    {
+        "timezone": "Europe/Vienna",
+        "name": "Central European Standard Time (Europe/Vienna)"
+    },
+    {
+        "timezone": "Europe/Warsaw",
+        "name": "Central European Standard Time (Europe/Warsaw)"
+    },
+    {
+        "timezone": "Europe/Zagreb",
+        "name": "Central European Standard Time (Europe/Zagreb)"
+    },
+    {
+        "timezone": "Europe/Zurich",
+        "name": "Central European Standard Time (Europe/Zurich)"
+    },
+    {
+        "timezone": "Asia/Makassar",
+        "name": "Central Indonesia Time (Asia/Makassar)"
+    },
+    {
+        "timezone": "America/Bahia_Banderas",
+        "name": "Central Standard Time (America/Bahia_Banderas)"
+    },
+    {
+        "timezone": "America/Belize",
+        "name": "Central Standard Time (America/Belize)"
+    },
+    {
+        "timezone": "America/Chicago",
+        "name": "Central Standard Time (America/Chicago)"
+    },
+    {
+        "timezone": "America/Costa_Rica",
+        "name": "Central Standard Time (America/Costa_Rica)"
+    },
+    {
+        "timezone": "America/El_Salvador",
+        "name": "Central Standard Time (America/El_Salvador)"
+    },
+    {
+        "timezone": "America/Guatemala",
+        "name": "Central Standard Time (America/Guatemala)"
+    },
+    {
+        "timezone": "America/Indiana/Knox",
+        "name": "Central Standard Time (America/Indiana/Knox)"
+    },
+    {
+        "timezone": "America/Indiana/Tell_City",
+        "name": "Central Standard Time (America/Indiana/Tell_City)"
+    },
+    {
+        "timezone": "America/Managua",
+        "name": "Central Standard Time (America/Managua)"
+    },
+    {
+        "timezone": "America/Matamoros",
+        "name": "Central Standard Time (America/Matamoros)"
+    },
+    {
+        "timezone": "America/Menominee",
+        "name": "Central Standard Time (America/Menominee)"
+    },
+    {
+        "timezone": "America/Merida",
+        "name": "Central Standard Time (America/Merida)"
+    },
+    {
+        "timezone": "America/Mexico_City",
+        "name": "Central Standard Time (America/Mexico_City)"
+    },
+    {
+        "timezone": "America/Monterrey",
+        "name": "Central Standard Time (America/Monterrey)"
+    },
+    {
+        "timezone": "America/North_Dakota/Beulah",
+        "name": "Central Standard Time (America/North_Dakota/Beulah)"
+    },
+    {
+        "timezone": "America/North_Dakota/Center",
+        "name": "Central Standard Time (America/North_Dakota/Center)"
+    },
+    {
+        "timezone": "America/North_Dakota/New_Salem",
+        "name": "Central Standard Time (America/North_Dakota/New_Salem)"
+    },
+    {
+        "timezone": "America/Rainy_River",
+        "name": "Central Standard Time (America/Rainy_River)"
+    },
+    {
+        "timezone": "America/Rankin_Inlet",
+        "name": "Central Standard Time (America/Rankin_Inlet)"
+    },
+    {
+        "timezone": "America/Regina",
+        "name": "Central Standard Time (America/Regina)"
+    },
+    {
+        "timezone": "America/Resolute",
+        "name": "Central Standard Time (America/Resolute)"
+    },
+    {
+        "timezone": "America/Swift_Current",
+        "name": "Central Standard Time (America/Swift_Current)"
+    },
+    {
+        "timezone": "America/Tegucigalpa",
+        "name": "Central Standard Time (America/Tegucigalpa)"
+    },
+    {
+        "timezone": "America/Winnipeg",
+        "name": "Central Standard Time (America/Winnipeg)"
+    },
+    {
+        "timezone": "Pacific/Guam",
+        "name": "Chamorro Standard Time (Pacific/Guam)"
+    },
+    {
+        "timezone": "Pacific/Saipan",
+        "name": "Chamorro Standard Time (Pacific/Saipan)"
+    },
+    {
+        "timezone": "Pacific/Chatham",
+        "name": "Chatham Standard Time (Pacific/Chatham)"
+    },
+    {
+        "timezone": "America/Santiago",
+        "name": "Chile Standard Time (America/Santiago)"
+    },
+    {
+        "timezone": "Asia/Macau",
+        "name": "China Standard Time (Asia/Macau)"
+    },
+    {
+        "timezone": "Asia/Shanghai",
+        "name": "China Standard Time (Asia/Shanghai)"
+    },
+    {
+        "timezone": "Asia/Choibalsan",
+        "name": "Choibalsan Standard Time (Asia/Choibalsan)"
+    },
+    {
+        "timezone": "Indian/Christmas",
+        "name": "Christmas Island Time (Indian/Christmas)"
+    },
+    {
+        "timezone": "Pacific/Chuuk",
+        "name": "Chuuk Time (Pacific/Chuuk)"
+    },
+    {
+        "timezone": "Indian/Cocos",
+        "name": "Cocos Islands Time (Indian/Cocos)"
+    },
+    {
+        "timezone": "America/Bogota",
+        "name": "Colombia Standard Time (America/Bogota)"
+    },
+    {
+        "timezone": "Pacific/Rarotonga",
+        "name": "Cook Islands Standard Time (Pacific/Rarotonga)"
+    },
+    {
+        "timezone": "UTC",
+        "name": "Coordinated Universal Time (UTC)"
+    },
+    {
+        "timezone": "America/Havana",
+        "name": "Cuba Standard Time (America/Havana)"
+    },
+    {
+        "timezone": "Antarctica/Davis",
+        "name": "Davis Time (Antarctica/Davis)"
+    },
+    {
+        "timezone": "Antarctica/DumontDUrville",
+        "name": "Dumont-d’Urville Time (Antarctica/DumontDUrville)"
+    },
+    {
+        "timezone": "Africa/Addis_Ababa",
+        "name": "East Africa Time (Africa/Addis_Ababa)"
+    },
+    {
+        "timezone": "Africa/Asmara",
+        "name": "East Africa Time (Africa/Asmara)"
+    },
+    {
+        "timezone": "Africa/Dar_es_Salaam",
+        "name": "East Africa Time (Africa/Dar_es_Salaam)"
+    },
+    {
+        "timezone": "Africa/Djibouti",
+        "name": "East Africa Time (Africa/Djibouti)"
+    },
+    {
+        "timezone": "Africa/Juba",
+        "name": "East Africa Time (Africa/Juba)"
+    },
+    {
+        "timezone": "Africa/Kampala",
+        "name": "East Africa Time (Africa/Kampala)"
+    },
+    {
+        "timezone": "Africa/Mogadishu",
+        "name": "East Africa Time (Africa/Mogadishu)"
+    },
+    {
+        "timezone": "Africa/Nairobi",
+        "name": "East Africa Time (Africa/Nairobi)"
+    },
+    {
+        "timezone": "Indian/Antananarivo",
+        "name": "East Africa Time (Indian/Antananarivo)"
+    },
+    {
+        "timezone": "Indian/Comoro",
+        "name": "East Africa Time (Indian/Comoro)"
+    },
+    {
+        "timezone": "Indian/Mayotte",
+        "name": "East Africa Time (Indian/Mayotte)"
+    },
+    {
+        "timezone": "America/Scoresbysund",
+        "name": "East Greenland Standard Time (America/Scoresbysund)"
+    },
+    {
+        "timezone": "Asia/Almaty",
+        "name": "East Kazakhstan Time (Asia/Almaty)"
+    },
+    {
+        "timezone": "Asia/Qostanay",
+        "name": "East Kazakhstan Time (Asia/Qostanay)"
+    },
+    {
+        "timezone": "Asia/Dili",
+        "name": "East Timor Time (Asia/Dili)"
+    },
+    {
+        "timezone": "Pacific/Easter",
+        "name": "Easter Island Standard Time (Pacific/Easter)"
+    },
+    {
+        "timezone": "Africa/Cairo",
+        "name": "Eastern European Standard Time (Africa/Cairo)"
+    },
+    {
+        "timezone": "Africa/Tripoli",
+        "name": "Eastern European Standard Time (Africa/Tripoli)"
+    },
+    {
+        "timezone": "Asia/Amman",
+        "name": "Eastern European Standard Time (Asia/Amman)"
+    },
+    {
+        "timezone": "Asia/Beirut",
+        "name": "Eastern European Standard Time (Asia/Beirut)"
+    },
+    {
+        "timezone": "Asia/Damascus",
+        "name": "Eastern European Standard Time (Asia/Damascus)"
+    },
+    {
+        "timezone": "Asia/Gaza",
+        "name": "Eastern European Standard Time (Asia/Gaza)"
+    },
+    {
+        "timezone": "Asia/Hebron",
+        "name": "Eastern European Standard Time (Asia/Hebron)"
+    },
+    {
+        "timezone": "Asia/Nicosia",
+        "name": "Eastern European Standard Time (Asia/Nicosia)"
+    },
+    {
+        "timezone": "Europe/Athens",
+        "name": "Eastern European Standard Time (Europe/Athens)"
+    },
+    {
+        "timezone": "Europe/Bucharest",
+        "name": "Eastern European Standard Time (Europe/Bucharest)"
+    },
+    {
+        "timezone": "Europe/Chisinau",
+        "name": "Eastern European Standard Time (Europe/Chisinau)"
+    },
+    {
+        "timezone": "Europe/Helsinki",
+        "name": "Eastern European Standard Time (Europe/Helsinki)"
+    },
+    {
+        "timezone": "Europe/Kaliningrad",
+        "name": "Eastern European Standard Time (Europe/Kaliningrad)"
+    },
+    {
+        "timezone": "Europe/Kiev",
+        "name": "Eastern European Standard Time (Europe/Kiev)"
+    },
+    {
+        "timezone": "Europe/Mariehamn",
+        "name": "Eastern European Standard Time (Europe/Mariehamn)"
+    },
+    {
+        "timezone": "Europe/Riga",
+        "name": "Eastern European Standard Time (Europe/Riga)"
+    },
+    {
+        "timezone": "Europe/Sofia",
+        "name": "Eastern European Standard Time (Europe/Sofia)"
+    },
+    {
+        "timezone": "Europe/Tallinn",
+        "name": "Eastern European Standard Time (Europe/Tallinn)"
+    },
+    {
+        "timezone": "Europe/Uzhgorod",
+        "name": "Eastern European Standard Time (Europe/Uzhgorod)"
+    },
+    {
+        "timezone": "Europe/Vilnius",
+        "name": "Eastern European Standard Time (Europe/Vilnius)"
+    },
+    {
+        "timezone": "Europe/Zaporozhye",
+        "name": "Eastern European Standard Time (Europe/Zaporozhye)"
+    },
+    {
+        "timezone": "Asia/Jayapura",
+        "name": "Eastern Indonesia Time (Asia/Jayapura)"
+    },
+    {
+        "timezone": "America/Atikokan",
+        "name": "Eastern Standard Time (America/Atikokan)"
+    },
+    {
+        "timezone": "America/Cancun",
+        "name": "Eastern Standard Time (America/Cancun)"
+    },
+    {
+        "timezone": "America/Cayman",
+        "name": "Eastern Standard Time (America/Cayman)"
+    },
+    {
+        "timezone": "America/Detroit",
+        "name": "Eastern Standard Time (America/Detroit)"
+    },
+    {
+        "timezone": "America/Grand_Turk",
+        "name": "Eastern Standard Time (America/Grand_Turk)"
+    },
+    {
+        "timezone": "America/Indiana/Indianapolis",
+        "name": "Eastern Standard Time (America/Indiana/Indianapolis)"
+    },
+    {
+        "timezone": "America/Indiana/Marengo",
+        "name": "Eastern Standard Time (America/Indiana/Marengo)"
+    },
+    {
+        "timezone": "America/Indiana/Petersburg",
+        "name": "Eastern Standard Time (America/Indiana/Petersburg)"
+    },
+    {
+        "timezone": "America/Indiana/Vevay",
+        "name": "Eastern Standard Time (America/Indiana/Vevay)"
+    },
+    {
+        "timezone": "America/Indiana/Vincennes",
+        "name": "Eastern Standard Time (America/Indiana/Vincennes)"
+    },
+    {
+        "timezone": "America/Indiana/Winamac",
+        "name": "Eastern Standard Time (America/Indiana/Winamac)"
+    },
+    {
+        "timezone": "America/Iqaluit",
+        "name": "Eastern Standard Time (America/Iqaluit)"
+    },
+    {
+        "timezone": "America/Jamaica",
+        "name": "Eastern Standard Time (America/Jamaica)"
+    },
+    {
+        "timezone": "America/Kentucky/Louisville",
+        "name": "Eastern Standard Time (America/Kentucky/Louisville)"
+    },
+    {
+        "timezone": "America/Kentucky/Monticello",
+        "name": "Eastern Standard Time (America/Kentucky/Monticello)"
+    },
+    {
+        "timezone": "America/Nassau",
+        "name": "Eastern Standard Time (America/Nassau)"
+    },
+    {
+        "timezone": "America/New_York",
+        "name": "Eastern Standard Time (America/New_York)"
+    },
+    {
+        "timezone": "America/Nipigon",
+        "name": "Eastern Standard Time (America/Nipigon)"
+    },
+    {
+        "timezone": "America/Panama",
+        "name": "Eastern Standard Time (America/Panama)"
+    },
+    {
+        "timezone": "America/Pangnirtung",
+        "name": "Eastern Standard Time (America/Pangnirtung)"
+    },
+    {
+        "timezone": "America/Port-au-Prince",
+        "name": "Eastern Standard Time (America/Port-au-Prince)"
+    },
+    {
+        "timezone": "America/Thunder_Bay",
+        "name": "Eastern Standard Time (America/Thunder_Bay)"
+    },
+    {
+        "timezone": "America/Toronto",
+        "name": "Eastern Standard Time (America/Toronto)"
+    },
+    {
+        "timezone": "America/Guayaquil",
+        "name": "Ecuador Time (America/Guayaquil)"
+    },
+    {
+        "timezone": "Atlantic/Stanley",
+        "name": "Falkland Islands Standard Time (Atlantic/Stanley)"
+    },
+    {
+        "timezone": "America/Noronha",
+        "name": "Fernando de Noronha Standard Time (America/Noronha)"
+    },
+    {
+        "timezone": "Pacific/Fiji",
+        "name": "Fiji Standard Time (Pacific/Fiji)"
+    },
+    {
+        "timezone": "America/Cayenne",
+        "name": "French Guiana Time (America/Cayenne)"
+    },
+    {
+        "timezone": "Indian/Kerguelen",
+        "name": "French Southern &amp; Antarctic Time (Indian/Kerguelen)"
+    },
+    {
+        "timezone": "Africa/Casablanca",
+        "name": "GMT (Africa/Casablanca)"
+    },
+    {
+        "timezone": "Africa/El_Aaiun",
+        "name": "GMT (Africa/El_Aaiun)"
+    },
+    {
+        "timezone": "America/Nuuk",
+        "name": "GMT (America/Nuuk)"
+    },
+    {
+        "timezone": "Asia/Famagusta",
+        "name": "GMT+02:00 (Asia/Famagusta)"
+    },
+    {
+        "timezone": "Europe/Istanbul",
+        "name": "GMT+03:00 (Europe/Istanbul)"
+    },
+    {
+        "timezone": "Europe/Kirov",
+        "name": "GMT+03:00 (Europe/Kirov)"
+    },
+    {
+        "timezone": "Europe/Astrakhan",
+        "name": "GMT+04:00 (Europe/Astrakhan)"
+    },
+    {
+        "timezone": "Europe/Saratov",
+        "name": "GMT+04:00 (Europe/Saratov)"
+    },
+    {
+        "timezone": "Europe/Ulyanovsk",
+        "name": "GMT+04:00 (Europe/Ulyanovsk)"
+    },
+    {
+        "timezone": "Asia/Urumqi",
+        "name": "GMT+06:00 (Asia/Urumqi)"
+    },
+    {
+        "timezone": "Asia/Barnaul",
+        "name": "GMT+07:00 (Asia/Barnaul)"
+    },
+    {
+        "timezone": "Asia/Tomsk",
+        "name": "GMT+07:00 (Asia/Tomsk)"
+    },
+    {
+        "timezone": "America/Punta_Arenas",
+        "name": "GMT-03:00 (America/Punta_Arenas)"
+    },
+    {
+        "timezone": "Antarctica/Palmer",
+        "name": "GMT-03:00 (Antarctica/Palmer)"
+    },
+    {
+        "timezone": "Pacific/Galapagos",
+        "name": "Galapagos Time (Pacific/Galapagos)"
+    },
+    {
+        "timezone": "Pacific/Gambier",
+        "name": "Gambier Time (Pacific/Gambier)"
+    },
+    {
+        "timezone": "Asia/Tbilisi",
+        "name": "Georgia Standard Time (Asia/Tbilisi)"
+    },
+    {
+        "timezone": "Pacific/Tarawa",
+        "name": "Gilbert Islands Time (Pacific/Tarawa)"
+    },
+    {
+        "timezone": "Africa/Abidjan",
+        "name": "Greenwich Mean Time (Africa/Abidjan)"
+    },
+    {
+        "timezone": "Africa/Accra",
+        "name": "Greenwich Mean Time (Africa/Accra)"
+    },
+    {
+        "timezone": "Africa/Bamako",
+        "name": "Greenwich Mean Time (Africa/Bamako)"
+    },
+    {
+        "timezone": "Africa/Banjul",
+        "name": "Greenwich Mean Time (Africa/Banjul)"
+    },
+    {
+        "timezone": "Africa/Bissau",
+        "name": "Greenwich Mean Time (Africa/Bissau)"
+    },
+    {
+        "timezone": "Africa/Conakry",
+        "name": "Greenwich Mean Time (Africa/Conakry)"
+    },
+    {
+        "timezone": "Africa/Dakar",
+        "name": "Greenwich Mean Time (Africa/Dakar)"
+    },
+    {
+        "timezone": "Africa/Freetown",
+        "name": "Greenwich Mean Time (Africa/Freetown)"
+    },
+    {
+        "timezone": "Africa/Lome",
+        "name": "Greenwich Mean Time (Africa/Lome)"
+    },
+    {
+        "timezone": "Africa/Monrovia",
+        "name": "Greenwich Mean Time (Africa/Monrovia)"
+    },
+    {
+        "timezone": "Africa/Nouakchott",
+        "name": "Greenwich Mean Time (Africa/Nouakchott)"
+    },
+    {
+        "timezone": "Africa/Ouagadougou",
+        "name": "Greenwich Mean Time (Africa/Ouagadougou)"
+    },
+    {
+        "timezone": "Africa/Sao_Tome",
+        "name": "Greenwich Mean Time (Africa/Sao_Tome)"
+    },
+    {
+        "timezone": "America/Danmarkshavn",
+        "name": "Greenwich Mean Time (America/Danmarkshavn)"
+    },
+    {
+        "timezone": "Atlantic/Reykjavik",
+        "name": "Greenwich Mean Time (Atlantic/Reykjavik)"
+    },
+    {
+        "timezone": "Atlantic/St_Helena",
+        "name": "Greenwich Mean Time (Atlantic/St_Helena)"
+    },
+    {
+        "timezone": "Europe/Dublin",
+        "name": "Greenwich Mean Time (Europe/Dublin)"
+    },
+    {
+        "timezone": "Europe/Guernsey",
+        "name": "Greenwich Mean Time (Europe/Guernsey)"
+    },
+    {
+        "timezone": "Europe/Isle_of_Man",
+        "name": "Greenwich Mean Time (Europe/Isle_of_Man)"
+    },
+    {
+        "timezone": "Europe/Jersey",
+        "name": "Greenwich Mean Time (Europe/Jersey)"
+    },
+    {
+        "timezone": "Europe/London",
+        "name": "Greenwich Mean Time (Europe/London)"
+    },
+    {
+        "timezone": "Asia/Dubai",
+        "name": "Gulf Standard Time (Asia/Dubai)"
+    },
+    {
+        "timezone": "Asia/Muscat",
+        "name": "Gulf Standard Time (Asia/Muscat)"
+    },
+    {
+        "timezone": "America/Guyana",
+        "name": "Guyana Time (America/Guyana)"
+    },
+    {
+        "timezone": "America/Adak",
+        "name": "Hawaii-Aleutian Standard Time (America/Adak)"
+    },
+    {
+        "timezone": "Pacific/Honolulu",
+        "name": "Hawaii-Aleutian Standard Time (Pacific/Honolulu)"
+    },
+    {
+        "timezone": "Asia/Hong_Kong",
+        "name": "Hong Kong Standard Time (Asia/Hong_Kong)"
+    },
+    {
+        "timezone": "Asia/Hovd",
+        "name": "Hovd Standard Time (Asia/Hovd)"
+    },
+    {
+        "timezone": "Asia/Colombo",
+        "name": "India Standard Time (Asia/Colombo)"
+    },
+    {
+        "timezone": "Asia/Kolkata",
+        "name": "India Standard Time (Asia/Kolkata)"
+    },
+    {
+        "timezone": "Indian/Chagos",
+        "name": "Indian Ocean Time (Indian/Chagos)"
+    },
+    {
+        "timezone": "Asia/Bangkok",
+        "name": "Indochina Time (Asia/Bangkok)"
+    },
+    {
+        "timezone": "Asia/Ho_Chi_Minh",
+        "name": "Indochina Time (Asia/Ho_Chi_Minh)"
+    },
+    {
+        "timezone": "Asia/Phnom_Penh",
+        "name": "Indochina Time (Asia/Phnom_Penh)"
+    },
+    {
+        "timezone": "Asia/Vientiane",
+        "name": "Indochina Time (Asia/Vientiane)"
+    },
+    {
+        "timezone": "Asia/Tehran",
+        "name": "Iran Standard Time (Asia/Tehran)"
+    },
+    {
+        "timezone": "Asia/Irkutsk",
+        "name": "Irkutsk Standard Time (Asia/Irkutsk)"
+    },
+    {
+        "timezone": "Asia/Jerusalem",
+        "name": "Israel Standard Time (Asia/Jerusalem)"
+    },
+    {
+        "timezone": "Asia/Tokyo",
+        "name": "Japan Standard Time (Asia/Tokyo)"
+    },
+    {
+        "timezone": "Asia/Pyongyang",
+        "name": "Korean Standard Time(Asia / Pyongyang)"
+    },
+    {
+        "timezone": "Asia/Seoul",
+        "name": "Korean Standard Time (Asia/Seoul)"
+    },
+    {
+        "timezone": "Pacific/Kosrae",
+        "name": "Kosrae Time (Pacific/Kosrae)"
+    },
+    {
+        "timezone": "Asia/Krasnoyarsk",
+        "name": "Krasnoyarsk Standard Time (Asia/Krasnoyarsk)"
+    },
+    {
+        "timezone": "Asia/Novokuznetsk",
+        "name": "Krasnoyarsk Standard Time (Asia/Novokuznetsk)"
+    },
+    {
+        "timezone": "Asia/Bishkek",
+        "name": "Kyrgyzstan Time (Asia/Bishkek)"
+    },
+    {
+        "timezone": "Pacific/Kiritimati",
+        "name": "Line Islands Time (Pacific/Kiritimati)"
+    },
+    {
+        "timezone": "Australia/Lord_Howe",
+        "name": "Lord Howe Standard Time (Australia/Lord_Howe)"
+    },
+    {
+        "timezone": "Antarctica/Macquarie",
+        "name": "Macquarie Island Time (Antarctica/Macquarie)"
+    },
+    {
+        "timezone": "Asia/Magadan",
+        "name": "Magadan Standard Time (Asia/Magadan)"
+    },
+    {
+        "timezone": "Asia/Kuala_Lumpur",
+        "name": "Malaysia Time (Asia/Kuala_Lumpur)"
+    },
+    {
+        "timezone": "Asia/Kuching",
+        "name": "Malaysia Time (Asia/Kuching)"
+    },
+    {
+        "timezone": "Indian/Maldives",
+        "name": "Maldives Time (Indian/Maldives)"
+    },
+    {
+        "timezone": "Pacific/Marquesas",
+        "name": "Marquesas Time (Pacific/Marquesas)"
+    },
+    {
+        "timezone": "Pacific/Kwajalein",
+        "name": "Marshall Islands Time (Pacific/Kwajalein)"
+    },
+    {
+        "timezone": "Pacific/Majuro",
+        "name": "Marshall Islands Time (Pacific/Majuro)"
+    },
+    {
+        "timezone": "Indian/Mauritius",
+        "name": "Mauritius Standard Time (Indian/Mauritius)"
+    },
+    {
+        "timezone": "Antarctica/Mawson",
+        "name": "Mawson Time (Antarctica/Mawson)"
+    },
+    {
+        "timezone": "America/Chihuahua",
+        "name": "Mexican Pacific Standard Time (America/Chihuahua)"
+    },
+    {
+        "timezone": "America/Hermosillo",
+        "name": "Mexican Pacific Standard Time (America/Hermosillo)"
+    },
+    {
+        "timezone": "America/Mazatlan",
+        "name": "Mexican Pacific Standard Time (America/Mazatlan)"
+    },
+    {
+        "timezone": "Europe/Minsk",
+        "name": "Moscow Standard Time (Europe/Minsk)"
+    },
+    {
+        "timezone": "Europe/Moscow",
+        "name": "Moscow Standard Time (Europe/Moscow)"
+    },
+    {
+        "timezone": "Europe/Simferopol",
+        "name": "Moscow Standard Time (Europe/Simferopol)"
+    },
+    {
+        "timezone": "America/Boise",
+        "name": "Mountain Standard Time (America/Boise)"
+    },
+    {
+        "timezone": "America/Cambridge_Bay",
+        "name": "Mountain Standard Time (America/Cambridge_Bay)"
+    },
+    {
+        "timezone": "America/Creston",
+        "name": "Mountain Standard Time (America/Creston)"
+    },
+    {
+        "timezone": "America/Dawson_Creek",
+        "name": "Mountain Standard Time (America/Dawson_Creek)"
+    },
+    {
+        "timezone": "America/Denver",
+        "name": "Mountain Standard Time (America/Denver)"
+    },
+    {
+        "timezone": "America/Edmonton",
+        "name": "Mountain Standard Time (America/Edmonton)"
+    },
+    {
+        "timezone": "America/Fort_Nelson",
+        "name": "Mountain Standard Time (America/Fort_Nelson)"
+    },
+    {
+        "timezone": "America/Inuvik",
+        "name": "Mountain Standard Time (America/Inuvik)"
+    },
+    {
+        "timezone": "America/Ojinaga",
+        "name": "Mountain Standard Time (America/Ojinaga)"
+    },
+    {
+        "timezone": "America/Phoenix",
+        "name": "Mountain Standard Time (America/Phoenix)"
+    },
+    {
+        "timezone": "America/Yellowknife",
+        "name": "Mountain Standard Time (America/Yellowknife)"
+    },
+    {
+        "timezone": "Asia/Yangon",
+        "name": "Myanmar Time (Asia/Yangon)"
+    },
+    {
+        "timezone": "Pacific/Nauru",
+        "name": "Nauru Time (Pacific/Nauru)"
+    },
+    {
+        "timezone": "Asia/Kathmandu",
+        "name": "Nepal Time (Asia/Kathmandu)"
+    },
+    {
+        "timezone": "Pacific/Noumea",
+        "name": "New Caledonia Standard Time (Pacific/Noumea)"
+    },
+    {
+        "timezone": "Antarctica/McMurdo",
+        "name": "New Zealand Standard Time (Antarctica/McMurdo)"
+    },
+    {
+        "timezone": "Pacific/Auckland",
+        "name": "New Zealand Standard Time (Pacific/Auckland)"
+    },
+    {
+        "timezone": "America/St_Johns",
+        "name": "Newfoundland Standard Time (America/St_Johns)"
+    },
+    {
+        "timezone": "Pacific/Niue",
+        "name": "Niue Time (Pacific/Niue)"
+    },
+    {
+        "timezone": "Pacific/Norfolk",
+        "name": "Norfolk Island Time (Pacific/Norfolk)"
+    },
+    {
+        "timezone": "Asia/Novosibirsk",
+        "name": "Novosibirsk Standard Time (Asia/Novosibirsk)"
+    },
+    {
+        "timezone": "Asia/Omsk",
+        "name": "Omsk Standard Time (Asia/Omsk)"
+    },
+    {
+        "timezone": "America/Dawson",
+        "name": "Pacific Standard Time (America/Dawson)"
+    },
+    {
+        "timezone": "America/Los_Angeles",
+        "name": "Pacific Standard Time (America/Los_Angeles)"
+    },
+    {
+        "timezone": "America/Tijuana",
+        "name": "Pacific Standard Time (America/Tijuana)"
+    },
+    {
+        "timezone": "America/Vancouver",
+        "name": "Pacific Standard Time (America/Vancouver)"
+    },
+    {
+        "timezone": "America/Whitehorse",
+        "name": "Pacific Standard Time (America/Whitehorse)"
+    },
+    {
+        "timezone": "Asia/Karachi",
+        "name": "Pakistan Standard Time (Asia/Karachi)"
+    },
+    {
+        "timezone": "Pacific/Palau",
+        "name": "Palau Time (Pacific/Palau)"
+    },
+    {
+        "timezone": "Pacific/Port_Moresby",
+        "name": "Papua New Guinea Time (Pacific/Port_Moresby)"
+    },
+    {
+        "timezone": "America/Asuncion",
+        "name": "Paraguay Standard Time (America/Asuncion)"
+    },
+    {
+        "timezone": "America/Lima",
+        "name": "Peru Standard Time (America/Lima)"
+    },
+    {
+        "timezone": "Asia/Kamchatka",
+        "name": "Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
+    },
+    {
+        "timezone": "Asia/Manila",
+        "name": "Philippine Standard Time (Asia/Manila)"
+    },
+    {
+        "timezone": "Pacific/Enderbury",
+        "name": "Phoenix Islands Time (Pacific/Enderbury)"
+    },
+    {
+        "timezone": "Pacific/Pitcairn",
+        "name": "Pitcairn Time (Pacific/Pitcairn)"
+    },
+    {
+        "timezone": "Pacific/Pohnpei",
+        "name": "Ponape Time (Pacific/Pohnpei)"
+    },
+    {
+        "timezone": "Antarctica/Rothera",
+        "name": "Rothera Time (Antarctica/Rothera)"
+    },
+    {
+        "timezone": "Indian/Reunion",
+        "name": "Réunion Time (Indian/Reunion)"
+    },
+    {
+        "timezone": "Asia/Sakhalin",
+        "name": "Sakhalin Standard Time (Asia/Sakhalin)"
+    },
+    {
+        "timezone": "Europe/Samara",
+        "name": "Samara Standard Time (Europe/Samara)"
+    },
+    {
+        "timezone": "Pacific/Midway",
+        "name": "Samoa Standard Time (Pacific/Midway)"
+    },
+    {
+        "timezone": "Pacific/Pago_Pago",
+        "name": "Samoa Standard Time (Pacific/Pago_Pago)"
+    },
+    {
+        "timezone": "Indian/Mahe",
+        "name": "Seychelles Time (Indian/Mahe)"
+    },
+    {
+        "timezone": "Asia/Singapore",
+        "name": "Singapore Standard Time (Asia/Singapore)"
+    },
+    {
+        "timezone": "Pacific/Guadalcanal",
+        "name": "Solomon Islands Time (Pacific/Guadalcanal)"
+    },
+    {
+        "timezone": "Africa/Johannesburg",
+        "name": "South Africa Standard Time (Africa/Johannesburg)"
+    },
+    {
+        "timezone": "Africa/Maseru",
+        "name": "South Africa Standard Time (Africa/Maseru)"
+    },
+    {
+        "timezone": "Africa/Mbabane",
+        "name": "South Africa Standard Time (Africa/Mbabane)"
+    },
+    {
+        "timezone": "Atlantic/South_Georgia",
+        "name": "South Georgia Time (Atlantic/South_Georgia)"
+    },
+    {
+        "timezone": "America/Miquelon",
+        "name": "St. Pierre &amp; Miquelon Standard Time (America/Miquelon)"
+    },
+    {
+        "timezone": "America/Paramaribo",
+        "name": "Suriname Time (America/Paramaribo)"
+    },
+    {
+        "timezone": "Antarctica/Syowa",
+        "name": "Syowa Time (Antarctica/Syowa)"
+    },
+    {
+        "timezone": "Pacific/Tahiti",
+        "name": "Tahiti Time (Pacific/Tahiti)"
+    },
+    {
+        "timezone": "Asia/Taipei",
+        "name": "Taipei Standard Time (Asia/Taipei)"
+    },
+    {
+        "timezone": "Asia/Dushanbe",
+        "name": "Tajikistan Time (Asia/Dushanbe)"
+    },
+    {
+        "timezone": "Pacific/Fakaofo",
+        "name": "Tokelau Time (Pacific/Fakaofo)"
+    },
+    {
+        "timezone": "Pacific/Tongatapu",
+        "name": "Tonga Standard Time (Pacific/Tongatapu)"
+    },
+    {
+        "timezone": "Asia/Ashgabat",
+        "name": "Turkmenistan Standard Time (Asia/Ashgabat)"
+    },
+    {
+        "timezone": "Pacific/Funafuti",
+        "name": "Tuvalu Time (Pacific/Funafuti)"
+    },
+    {
+        "timezone": "Asia/Ulaanbaatar",
+        "name": "Ulaanbaatar Standard Time (Asia/Ulaanbaatar)"
+    },
+    {
+        "timezone": "America/Montevideo",
+        "name": "Uruguay Standard Time (America/Montevideo)"
+    },
+    {
+        "timezone": "Asia/Samarkand",
+        "name": "Uzbekistan Standard Time (Asia/Samarkand)"
+    },
+    {
+        "timezone": "Asia/Tashkent",
+        "name": "Uzbekistan Standard Time (Asia/Tashkent)"
+    },
+    {
+        "timezone": "Pacific/Efate",
+        "name": "Vanuatu Standard Time (Pacific/Efate)"
+    },
+    {
+        "timezone": "America/Caracas",
+        "name": "Venezuela Time (America/Caracas)"
+    },
+    {
+        "timezone": "Asia/Ust-Nera",
+        "name": "Vladivostok Standard Time (Asia/Ust-Nera)"
+    },
+    {
+        "timezone": "Asia/Vladivostok",
+        "name": "Vladivostok Standard Time (Asia/Vladivostok)"
+    },
+    {
+        "timezone": "Europe/Volgograd",
+        "name": "Volgograd Standard Time (Europe/Volgograd)"
+    },
+    {
+        "timezone": "Antarctica/Vostok",
+        "name": "Vostok Time (Antarctica/Vostok)"
+    },
+    {
+        "timezone": "Pacific/Wake",
+        "name": "Wake Island Time (Pacific/Wake)"
+    },
+    {
+        "timezone": "Pacific/Wallis",
+        "name": "Wallis &amp; Futuna Time (Pacific/Wallis)"
+    },
+    {
+        "timezone": "Africa/Bangui",
+        "name": "West Africa Standard Time (Africa/Bangui)"
+    },
+    {
+        "timezone": "Africa/Brazzaville",
+        "name": "West Africa Standard Time (Africa/Brazzaville)"
+    },
+    {
+        "timezone": "Africa/Douala",
+        "name": "West Africa Standard Time (Africa/Douala)"
+    },
+    {
+        "timezone": "Africa/Kinshasa",
+        "name": "West Africa Standard Time (Africa/Kinshasa)"
+    },
+    {
+        "timezone": "Africa/Lagos",
+        "name": "West Africa Standard Time (Africa/Lagos)"
+    },
+    {
+        "timezone": "Africa/Libreville",
+        "name": "West Africa Standard Time (Africa/Libreville)"
+    },
+    {
+        "timezone": "Africa/Luanda",
+        "name": "West Africa Standard Time (Africa/Luanda)"
+    },
+    {
+        "timezone": "Africa/Malabo",
+        "name": "West Africa Standard Time (Africa/Malabo)"
+    },
+    {
+        "timezone": "Africa/Ndjamena",
+        "name": "West Africa Standard Time (Africa/Ndjamena)"
+    },
+    {
+        "timezone": "Africa/Niamey",
+        "name": "West Africa Standard Time (Africa/Niamey)"
+    },
+    {
+        "timezone": "Africa/Porto-Novo",
+        "name": "West Africa Standard Time (Africa/Porto-Novo)"
+    },
+    {
+        "timezone": "Asia/Aqtau",
+        "name": "West Kazakhstan Time (Asia/Aqtau)"
+    },
+    {
+        "timezone": "Asia/Aqtobe",
+        "name": "West Kazakhstan Time (Asia/Aqtobe)"
+    },
+    {
+        "timezone": "Asia/Atyrau",
+        "name": "West Kazakhstan Time (Asia/Atyrau)"
+    },
+    {
+        "timezone": "Asia/Oral",
+        "name": "West Kazakhstan Time (Asia/Oral)"
+    },
+    {
+        "timezone": "Asia/Qyzylorda",
+        "name": "West Kazakhstan Time (Asia/Qyzylorda)"
+    },
+    {
+        "timezone": "America/Argentina/San_Luis",
+        "name": "Western Argentina Standard Time (America/Argentina/San_Luis)"
+    },
+    {
+        "timezone": "Atlantic/Canary",
+        "name": "Western European Standard Time (Atlantic/Canary)"
+    },
+    {
+        "timezone": "Atlantic/Faroe",
+        "name": "Western European Standard Time (Atlantic/Faroe)"
+    },
+    {
+        "timezone": "Atlantic/Madeira",
+        "name": "Western European Standard Time (Atlantic/Madeira)"
+    },
+    {
+        "timezone": "Europe/Lisbon",
+        "name": "Western European Standard Time (Europe/Lisbon)"
+    },
+    {
+        "timezone": "Asia/Jakarta",
+        "name": "Western Indonesia Time (Asia/Jakarta)"
+    },
+    {
+        "timezone": "Asia/Pontianak",
+        "name": "Western Indonesia Time (Asia/Pontianak)"
+    },
+    {
+        "timezone": "Asia/Khandyga",
+        "name": "Yakutsk Standard Time (Asia/Khandyga)"
+    },
+    {
+        "timezone": "Asia/Yakutsk",
+        "name": "Yakutsk Standard Time (Asia/Yakutsk)"
+    },
+    {
+        "timezone": "Asia/Yekaterinburg",
+        "name": "Yekaterinburg Standard Time (Asia/Yekaterinburg)"
+    }
+]

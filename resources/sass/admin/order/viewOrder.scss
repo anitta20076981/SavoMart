@@ -1,0 +1,17 @@
+.minus,
+.plus {
+    width: 40px;
+    height: 42px;
+    background: #edfff0;
+    border-radius: 4px;
+    border: 1px solid #539a796b;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #539a79;
+    cursor: pointer;
+    &:hover {
+        background: #5dbc78;
+        color: #fff;
+    }
+}

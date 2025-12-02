@@ -1,0 +1,37 @@
+// TinyMCE: The rich text editor built to scale, designed to innovate, and developed in open source: https://www.tiny.cloud/
+
+require('tinymce');
+require('tinymce/icons/default/icons.js');
+require('tinymce/themes/silver/theme.js');
+require('tinymce/icons/default/icons.js');
+require('tinymce/plugins/advlist/plugin.js');
+require('tinymce/plugins/anchor/plugin.js');
+require('tinymce/plugins/autolink/plugin.js');
+require('tinymce/plugins/autoresize/plugin.js');
+require('tinymce/plugins/autosave/plugin.js');
+require('tinymce/plugins/charmap/plugin.js');
+require('tinymce/plugins/code/plugin.js');
+require('tinymce/plugins/codesample/plugin.js');
+require('tinymce/plugins/directionality/plugin.js');
+require('tinymce/plugins/emoticons/plugin.js');
+require('tinymce/plugins/fullscreen/plugin.js');
+require('tinymce/plugins/help/plugin.js');
+require('tinymce/plugins/image/plugin.js');
+require('tinymce/plugins/importcss/plugin.js');
+require('tinymce/plugins/insertdatetime/plugin.js');
+require('tinymce/plugins/link/plugin.js');
+require('tinymce/plugins/lists/plugin.js');
+require('tinymce/plugins/media/plugin.js');
+require('tinymce/plugins/nonbreaking/plugin.js');
+require('tinymce/plugins/pagebreak/plugin.js');
+require('tinymce/plugins/preview/plugin.js');
+require('tinymce/plugins/quickbars/plugin.js');
+require('tinymce/plugins/save/plugin.js');
+require('tinymce/plugins/searchreplace/plugin.js');
+require('tinymce/plugins/table/plugin.js');
+require('tinymce/plugins/template/plugin.js');
+require('tinymce/plugins/visualblocks/plugin.js');
+require('tinymce/plugins/visualchars/plugin.js');
+require('tinymce/plugins/wordcount/plugin.js');
+require('../../js/admin/layouts/vendors/plugins/tinymce.init.js');
+window.SavoMartTinyMceInput = require('../../js/admin/layouts/components/tinyMce.js');

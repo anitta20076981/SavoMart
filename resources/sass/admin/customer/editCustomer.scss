@@ -1,0 +1,21 @@
+@import '../../../plugins/tagify/tagify.scss';
+.clear-btn {
+    margin-left: 30px;
+}
+
+#listCustomerQuote td {
+    text-align: left;
+}
+
+#listCustomerQuotRequest td {
+    text-align: left;
+}
+
+#listCustomerAddress td,
+#listCustomerAddress th {
+    text-align: left !important;
+}
+
+#listCustomerAddress td a {
+    padding: 0;
+}
