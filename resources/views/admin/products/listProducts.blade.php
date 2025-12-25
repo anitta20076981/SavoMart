@@ -1,7 +1,6 @@
 @section('title', 'List Products')
 
 @push('script')
-<script src="{{ mix('js/admin/products/listProducts.js') }}"></script>
 @endpush
 
 @push('style')
@@ -57,11 +56,11 @@
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listProducts" data-url="{{ route('admin_products_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listProducts">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
-                        <th class="min-w-125px"> Name</th>
+                        <th class="min-w-125px">Name</th>
                         <th class="min-w-125px">Sku</th>
                         <th class="min-w-125px">Product Type</th>
                         <th class="min-w-75px">Status</th>
@@ -70,8 +69,58 @@
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($products as $index => $product)
+                    <tr>
+                        {{-- Index --}}
+                        <td>{{ $index + 1 }}</td>
+
+                        {{-- Name --}}
+                        <td>
+                            @can('products_view')
+                            <a href="{{ route('admin_products_edit', ['id' => $product->id]) }}" class="text-gray-800 text-hover-primary fw-bold">
+                                {{ $product->name }}
+                            </a>
+                            @else
+                            {{ $product->name }}
+                            @endcan
+                        </td>
+
+                        {{-- SKU --}}
+                        <td>{{ $product->sku }}</td>
+
+                        {{-- Product Type --}}
+                        <td>
+                            @include('admin.products.listType', ['data' => $product])
+                        </td>
+
+                        {{-- Status --}}
+                        <td>
+                            @include('admin.products.listStatus', ['data' => $product])
+                        </td>
+
+                        {{-- Actions --}}
+                        <td>
+                            @can('products_update')
+                            <a href="{{ route('admin_products_edit', ['id' => $product->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('products_delete')
+                            @if($product->can_delete)
+                            <form action="{{ route('admin_products_delete', ['id' => $product->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm btn-light-danger">Delete</button>
+                            </form>
+                            @endif
+                            @endcan
+                        </td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
+
         </div>
     </div>
 </x-admin-layout>

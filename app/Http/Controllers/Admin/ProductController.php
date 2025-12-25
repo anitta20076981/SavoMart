@@ -54,7 +54,9 @@ class ProductController extends Controller
             ['name' => 'Products'],
         ];
 
-        return view('admin.products.listProducts', compact('breadcrumbs'));
+        $products = $this->productRepo->getProducts($request->all())->get();
+
+        return view('admin.products.listProducts', compact('breadcrumbs','products'));
     }
 
     public function table(ProductsListDataRequest $request)
