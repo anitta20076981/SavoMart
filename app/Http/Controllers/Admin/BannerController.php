@@ -18,14 +18,15 @@ class BannerController extends Controller
 {
     use Image;
 
-    public function listBanner(BannerListRequest $request)
+    public function listBanner(BannerListRequest $request,BannerRepository $bannerRepo)
     {
         $breadcrumbs = [
             ['link' => 'admin_dashboard', 'name' => 'Dashboard'],
             ['name' => 'Banner'],
         ];
+        $banners = $bannerRepo->getForDatatable($request->all())->get();
 
-        return view('admin.banner.listBanner', compact('breadcrumbs'));
+        return view('admin.banner.listBanner', compact('breadcrumbs','banners'));
     }
 
     public function bannerListData(BannerListDataRequest $request, BannerRepository $bannerRepo)

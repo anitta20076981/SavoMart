@@ -1,11 +1,10 @@
 @section('title', 'List Banners')
 
 @push('script')
-    <script src="{{ mix('js/admin/banner/listBanner.js') }}"></script>
 @endpush
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/admin/banner/listBanner.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ mix('css/admin/banner/listBanner.css') }}">
 @endpush
 
 <x-admin-layout>
@@ -35,12 +34,12 @@
                     </div>
                 </div>
                 @can('banner_create')
-                    <a href="{{ route('admin_banner_add') }}" class="btn btn-primary">Add Banner</a>
+                <a href="{{ route('admin_banner_add') }}" class="btn btn-primary">Add Banner</a>
                 @endcan
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listBanner" data-url="{{ route('admin_banner_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listBanner">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
@@ -51,6 +50,41 @@
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($banners as $index => $banner)
+                    <tr>
+                        <td>{{ $index + 1 }}</td>
+                        <td>
+                            @can('banner_view')
+                            <a href="{{ route('admin_banner_edit', ['id' => $banner->id]) }}" class="text-gray-800 text-hover-primary fw-bold">
+                                {{ $banner->name }}
+                            </a>
+                            @else
+                            {{ $banner->name }}
+                            @endcan
+                        </td>
+                        <td>{{ $banner->status }}</td>
+
+                        <td>
+                            @can('banner_update')
+                            <a href="{{ route('admin_banner_edit', ['id' => $banner->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('banner_delete')
+                            <form action="{{ route('admin_banner_banner_delete', ['id' => $banner->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this banner?');">
+                                @csrf
+                                @method('DELETE')
+
+                                <button type="submit" class="btn btn-sm btn-light-danger">
+                                    Delete
+                                </button>
+                            </form>
+                            @endcan
+                        </td>
+
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

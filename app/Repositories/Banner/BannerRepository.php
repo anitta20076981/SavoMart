@@ -14,9 +14,9 @@ class BannerRepository implements BannerRepositoryInterface
     {
         $banner = Banner::select(['id', 'name', 'is_deletable', 'status'])
             ->where(function (Builder $query) use ($data) {
-                if ($data['status'] != '') {
-                    $query->where('status', '=', $data['status']);
-                }
+                // if ($data['status'] != '') {
+                //     $query->where('status', '=', $data['status']);
+                // }
             })->orderBy('id', 'DESC');
 
         return $banner;
