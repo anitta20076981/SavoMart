@@ -97,17 +97,17 @@ if (!function_exists('sideMenu')) {
                         'active' => routeMatch(['admin_categories_list', 'admin_categories_add', 'admin_categories_edit']),
                         'url' => route('admin_categories_list'),
                     ],
-                    [
-                        'name' => __('Product Attributes'),
-                        'permission' => ['attribute_read'],
-                        'active' => routeMatch(['admin_attribute_list', 'admin_attribute_add', 'admin_attribute_edit']),
-                        'url' => route('admin_attribute_list'),
-                    ], [
-                        'name' => __('Attribute Sets'),
-                        'permission' => ['attribute_set_read'],
-                        'active' => routeMatch(['admin_attribute_set_list', 'admin_attribute_set_add', 'admin_attribute_set_edit']),
-                        'url' => route('admin_attribute_set_list'),
-                    ],
+                    // [
+                    //     'name' => __('Product Attributes'),
+                    //     'permission' => ['attribute_read'],
+                    //     'active' => routeMatch(['admin_attribute_list', 'admin_attribute_add', 'admin_attribute_edit']),
+                    //     'url' => route('admin_attribute_list'),
+                    // ], [
+                    //     'name' => __('Attribute Sets'),
+                    //     'permission' => ['attribute_set_read'],
+                    //     'active' => routeMatch(['admin_attribute_set_list', 'admin_attribute_set_add', 'admin_attribute_set_edit']),
+                    //     'url' => route('admin_attribute_set_list'),
+                    // ],
                     // [
                     //     'name' => __('Applications'),
                     //     'permission' => ['application_read'],
