@@ -1,7 +1,6 @@
 @section('title', 'List Categories')
 
 @push('script')
-<script src="{{ mix('js/admin/category/listCategory.js') }}"></script>
 @endpush
 
 @push('style')
