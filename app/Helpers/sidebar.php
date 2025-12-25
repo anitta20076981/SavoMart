@@ -122,41 +122,7 @@ if (!function_exists('sideMenu')) {
                     ],
                 ],
             ],
-            [
-                'name' => __('System'),
-                'home_menu' => true,
-                'icon' => '<i class="ki-outline ki-setting-4 fs-2"></i>',
-                'permission' => ['settings_read'],
-                'active' => routeMatch(['admin_settings_store_branding_view', 'admin_settings_store_config_view', 'admin_settings_store_social_config_view', 'admin_data_transfer_index', 'admin_data_transfer_export_index', 'admin_data_transfer_import_index','admin_pages_list']),
-                'child' => [
-                    [
-                        'name' => __('Branding'),
-                        'permission' => ['settings_read'],
-                        'active' => routeMatch(['admin_settings_store_branding_view']),
-                        'url' => route('admin_settings_store_branding_view'),
-                    ], [
-                        'name' => __('Website Configuration'),
-                        'permission' => ['settings_read'],
-                        'active' => routeMatch(['admin_settings_store_config_view']),
-                        'url' => route('admin_settings_store_config_view'),
-                    ], [
-                        'name' => __('Social Management'),
-                        'permission' => ['settings_read'],
-                        'active' => routeMatch(['admin_settings_store_social_config_view']),
-                        'url' => route('admin_settings_store_social_config_view'),
-                    ],[
-                        'name' => __('Data Transfer'),
-                        'permission' => ['settings_read'],
-                        'active' => routeMatch(['admin_data_transfer_index', 'admin_data_transfer_export_index', 'admin_data_transfer_import_index']),
-                        'url' => route('admin_data_transfer_index'),
-                    ],[
-                        'name' => __('Terms & Condition'),
-                        'permission' => ['settings_read'],
-                        'active' => routeMatch(['admin_pages_list', 'admin_pages_list', 'admin_pages_list']),
-                        'url' => route('admin_pages_list'),
-                    ],
-                ],
-            ],
+           
         ];
         $user = auth()->guard('admin')->user();
         $sideMenu = renderList($sideMenuList, $user);

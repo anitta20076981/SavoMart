@@ -52,13 +52,8 @@
                                 <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
-                                <label class="required form-label">Name (Arabic)</label>
-                                <input type="text" name="name_ar" class="form-control mb-2" placeholder="Name in Arabic" value="{{ old('name_ar') }}">
-                                @error('name_ar')
-                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
-                                @enderror
-                            </div>
+                            <input type="hidden" name="name_ar" id="name_ar" value="name_ar">
+
                         </div>
                     </div>
                     <div class="mb-10 fv-row fv-plugins-icon-container">

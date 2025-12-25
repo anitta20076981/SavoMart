@@ -52,8 +52,7 @@
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
-                        <th class="min-w-125px">English Name </th>
-                        <th class="min-w-125px">Arabic Name</th>
+                        <th class="min-w-125px"> Name </th>
                         <th class="min-w-125px">Icon</th>
                         <th class="min-w-125px">Parent Category</th>
                         <th class="min-w-125px">Status</th>

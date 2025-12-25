@@ -1,11 +1,11 @@
 @section('title', 'Add Products')
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/admin/products/addProducts.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ mix('css/admin/products/addProducts.css') }}">
 @endpush
 
 @push('script')
-    <script src="{{ mix('js/admin/products/addProducts.js') }}"></script>
+<script src="{{ mix('js/admin/products/addProducts.js') }}"></script>
 @endpush
 
 <x-admin-layout :breadcrumbs="$breadcrumbs">
@@ -37,7 +37,7 @@
                         </div>
                         <div class="text-muted fs-7">Set the thambnail. Only *.png, *.jpg and *.jpeg image files are accepted</div>
                         @error('thumbnail')
-                            <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                         @enderror
                     </div>
                 </div>
@@ -67,11 +67,11 @@
                                     <label class="required form-label">Attribute Set</label>
                                     <select class="form-select" data-kt-select2="true" data-server="true" data-placeholder="Select an option" data-option-url="{{ route('admin_options_attribute_sets') }}" data-form-url="{{ route('admin_products_attribute_form') }}" id="product_attribute_set_select" name="attribute_set_id">
                                         @if (isset($old['attribute_set_id']) && $old['attribute_set_id'] != '')
-                                            <option value="{{ $old['attribute_set_id']->id }}" selected>{{ $old['attribute_set_id']->name }}</option>
+                                        <option value="{{ $old['attribute_set_id']->id }}" selected>{{ $old['attribute_set_id']->name }}</option>
                                         @endif
                                     </select>
                                     @error('attribute_set_id')
-                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                     @enderror
                                 </div>
                                 <div class="mb-10 fv-row">
@@ -79,46 +79,32 @@
                                     <input type="text" name="sku" id="product-sku" class="form-control mb-2" placeholder="SKU Number" value="{{ old('sku') }}" data-sku-unique-url="{{ route('admin_products_sku_validation') }}" />
                                     <div class="text-muted fs-7">Enter the product SKU.</div>
                                     @error('sku')
-                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                     @enderror
                                 </div>
                                 <div class="mb-10 fv-row">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <label class="required form-label">Product Name (English)</label>
-                                            <input type="text" name="productName" id="pruduct-name" class="form-control mb-2" placeholder="Product name in English" value="{{ old('productName') }}" />
+                                        <div class="col-md-12">
+                                            <label class="required form-label">Product Name </label>
+                                            <input type="text" name="productName" id="pruduct-name" class="form-control mb-2" placeholder="Product name" value="{{ old('productName') }}" />
                                             <div class="text-muted fs-7">A product name is required and recommended to be unique.</div>
                                             @error('productName')
-                                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                            <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                             @enderror
                                         </div>
-                                        <div class="col-md-6">
-                                            <label class="required form-label">Product Name (Arabic)</label>
-                                            <input type="text" name="name_ar" id="name_ar" class="form-control mb-2" placeholder="Product name in Arabic" value="{{ old('name_ar') }}" />
-                                            <div class="text-muted fs-7">A product name is required and recommended to be unique.</div>
-                                            @error('name_ar')
-                                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
-                                            @enderror
-                                        </div>
+                                        <input type="hidden" name="name_ar" id="name_ar" value="name_ar">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <label class="form-label">Description (English)</label>
                                         <textarea id="description" name="description" data-kt-tinymce-editor="true" data-kt-initialized="false" class="form-control min-h-200px mb-2"> {{ old('description') }}</textarea>
                                         @error('description')
-                                            <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                         @enderror
                                         <div class="text-muted fs-7">Set a description to the product for better visibility.</div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="form-label">Description (Arabic)</label>
-                                        <textarea id="description_ar" name="description_ar" data-kt-tinymce-editor="true" data-kt-initialized="false" class="form-control min-h-200px mb-2"> {{ old('description_ar') }}</textarea>
-                                        @error('description_ar')
-                                            <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
-                                        @enderror
-                                        <div class="text-muted fs-7">Set a description to the product for better visibility.</div>
-                                    </div>
+                                    <input type="hidden" name="description_ar" id="description_ar" value="description_ar">
                                 </div>
                             </div>
                         </div>
@@ -165,7 +151,7 @@
                                     <label class="required form-label">Quantity</label>
                                     <input type="number" name="quantity" id="quantity" class="form-control mb-2" placeholder="" value={{ old('quantity') ? old('quantity') : 0 }} min="0" />
                                     @error('quantity')
-                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                     @enderror
                                 </div>
                             </div>
@@ -183,7 +169,7 @@
                                     <input type="number" name="price" id="pruduct-base-price" id="price" class="form-control mb-2" placeholder="Product price" value="{{ old('price', 0) }}" />
                                     <div class="text-muted fs-7">Set the product price.</div>
                                     @error('price')
-                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                     @enderror
                                 </div>
                                 <div class="fv-row">
@@ -221,7 +207,7 @@
                                         </div>
                                     </div>
                                     @error('discount_option')
-                                        <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                     @enderror
                                 </div>
                                 <div class="d-none mb-12 fv-row noUi-container" id="add_product_discount_percentage">
@@ -254,7 +240,7 @@
                                                 <label class="required form-label">From Date</label>
                                                 <input class="form-control flatpickr-input active" data-kt-date-input="true" data-kt-time-enabled="true" data-kt-initialized="false" data-format="{{ config('date_format.date_time_store') }}" placeholder="Select From date" name="special_price_from" id="special_price_from" value="{{ old('special_price_from') }}" />
                                                 @error('special_price_from')
-                                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                                 @enderror
                                             </div>
 
@@ -262,7 +248,7 @@
                                                 <label class="required form-label">To Date</label>
                                                 <input class="form-control flatpickr-input active" data-kt-date-input="true" data-kt-time-enabled="true" data-kt-initialized="false" data-format="{{ config('date_format.date_time_store') }}" placeholder="Select to date" name="special_price_to" id="special_price_to" value="{{ old('special_price_to') }}" data-mindate="{{ date(config('date_format.date_only_store')) }}" />
                                                 @error('special_price_from')
-                                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                                 @enderror
                                             </div>
                                         </div>
@@ -283,7 +269,7 @@
                                 <input type="checkbox" name="categories[]" data-error="#category_id-error-div" hidden class="tree-checkbox category_0 category-tree" id="category_id">
                             </div>
                             @error('categories')
-                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                            <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                             @enderror
                         </div>
                     </div>
@@ -299,7 +285,7 @@
                             </div>
                             <div class="card-body">
                                 <p>Configurable products allow customers to choose options (Ex: shirt color). You need to create a simple product for each configuration (Ex: a product for each color).</p>
-                                <button type="button" data-kt-load-drawer="true" data-url="{{ route('admin_products_configuration_form') }}" data-drawer-parameters=@json(['attribute_set_id' => ['selector' => '#product_attribute_set_select']]) class="btn btn-primary configurable-drawer-button" data-drawer-id="configuration-drawer">Create Configurations</button>
+                                <button type="button" data-kt-load-drawer="true" data-url="{{ route('admin_products_configuration_form') }}" data-drawer-parameters=@json(['attribute_set_id'=> ['selector' => '#product_attribute_set_select']]) class="btn btn-primary configurable-drawer-button" data-drawer-id="configuration-drawer">Create Configurations</button>
                                 <div id="addVariationContainer" data-url="{{ route('admin_products_add_variation_list') }}"></div>
                                 <input type="hidden" data-edit-product-section="0" class="is-edit">
                             </div>
@@ -314,7 +300,7 @@
                                 <select id="related_product_id" name="related_product_id[]" class="form-select" data-kt-select2="true" data-server="true" data-placeholder="Select Product" data-option-url="{{ route('admin_options_products') }}" data-multiple="true" multiple>
                                 </select>
                                 @error('related_product_id')
-                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                 @enderror
                             </div>
                         </div>
@@ -332,7 +318,7 @@
                                     </label>
                                 </div>
                                 @error('featured_product')
-                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                 @enderror
                             </div>
                         </div>
@@ -350,7 +336,7 @@
                                     </label>
                                 </div>
                                 @error('delivery_expected_time')
-                                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                                 @enderror
                             </div>
                         </div>

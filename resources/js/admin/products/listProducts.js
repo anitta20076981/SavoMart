@@ -17,7 +17,6 @@ var SavoMartProductsListPages = (function () {
         SavoMartJson.options.datatables.columns = [
             { data: "DT_RowIndex", orderable: false, searchable: false },
             { data: "name", name: "name", orderable: true, searchable: true },
-            { data: "name_ar", name: "name_ar", orderable: true, searchable: true },
             { data: "sku", name: "sku", orderable: false, searchable: true },
             { data: "type", name: "type", orderable: true, searchable: true },
             { data: "status", orderable: true, searchable: true },

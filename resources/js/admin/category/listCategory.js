@@ -18,7 +18,6 @@ var SavoMartCategoryList = function () {
         SavoMartJson.options.datatables.columns = [
             { data: "DT_RowIndex", orderable: false, searchable: false },
             { data: "name", name: "name", orderable: true, searchable: true },
-            { data: "name_ar", name: "name_ar", orderable: true, searchable: true },
             { data: "icon", name: "icon", orderable: true, searchable: true },
             { data: "parent_category", name: "parent_category", orderable: false, searchable: false },
             { data: "status", orderable: false, searchable: false },
