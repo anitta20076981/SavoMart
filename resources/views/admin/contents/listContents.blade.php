@@ -1,11 +1,10 @@
 @section('title', 'List Contents')
 
 @push('script')
-    <script src="{{ mix('js/admin/contents/listContents.js') }}"></script>
 @endpush
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/admin/contents/listContents.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ mix('css/admin/contents/listContents.css') }}">
 @endpush
 
 <x-admin-layout>
@@ -35,26 +34,69 @@
                     </div>
                 </div>
                 @can('contents_create')
-                    <a href="{{ route('admin_contents_add') }}" class="btn btn-primary">Add Content</a>
+                <a href="{{ route('admin_contents_add') }}" class="btn btn-primary">Add Content</a>
                 @endcan
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listContents" data-url="{{ route('admin_contents_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
                         <th class="min-w-125px">Name</th>
                         <th class="min-w-125px">Title</th>
                         <th class="min-w-125px">Slug</th>
-                        <th class="min-w-125px">Category</th>
                         <th class="min-w-125px">Status</th>
                         <th class="text-end min-w-70px">Actions</th>
                     </tr>
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($contents as $index => $content)
+                    <tr>
+                        {{-- Index --}}
+                        <td>{{ $index + 1 }}</td>
+
+                        {{-- Name (link if user has permission) --}}
+                        <td>
+                            @can('contents_view')
+                            <a href="{{ route('admin_contents_edit', ['id' => $content->id]) }}" class="text-gray-800 text-hover-primary fw-bold">
+                                {{ $content->name }}
+                            </a>
+                            @else
+                            {{ $content->name }}
+                            @endcan
+                        </td>
+                        <td>{{ $content->title }}</td>
+                        <td>{{ $content->slug }}</td>
+
+                        {{-- Status --}}
+                        <td>
+                            @include('admin.elements.listStatus', ['data' => $content])
+                        </td>
+
+                        {{-- Actions --}}
+                        <td>
+                            @can('contents_update')
+                            <a href="{{ route('admin_contents_edit', ['id' => $content->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('contents_delete')
+                            @if($content->is_deletable == 1)
+                            <form action="{{ route('admin_contents_delete', ['id' => $content->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this content?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm btn-light-danger">Delete</button>
+                            </form>
+                            @endif
+                            @endcan
+                        </td>
+                    </tr>
+                    @endforeach
                 </tbody>
+
             </table>
         </div>
     </div>

@@ -16,14 +16,15 @@ use Yajra\DataTables\DataTables;
 
 class ContentsController extends Controller
 {
-    public function list(ContentsListRequest $request)
+    public function list(ContentsListRequest $request,ContentsRepository $contentsRepo)
     {
         $breadcrumbs = [
             ['link' => 'admin_dashboard', 'name' => 'Dashboard'],
             ['name' => 'Contents'],
         ];
+        $contents = $contentsRepo->getContents($request->all())->get();
 
-        return view('admin.contents.listContents', compact('breadcrumbs'));
+        return view('admin.contents.listContents', compact('breadcrumbs','contents'));
     }
 
     public function table(ContentsListDataRequest $request, ContentsRepository $contentsRepo)
