@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card card-flush py-4">
+                        <!-- <div class="card card-flush py-4">
                             <div class="card-header">
                                 <div class="card-title">
                                     <h2>Attributes</h2>
@@ -117,7 +117,7 @@
                             <div class="card-body pt-0">
                                 <div id="attributes_container"></div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="card card-flush py-4">
                             <div class="card-header">
