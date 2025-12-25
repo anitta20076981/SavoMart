@@ -17,14 +17,15 @@ use Yajra\DataTables\DataTables;
 
 class CategoryController extends Controller
 {
-    public function list(CategoryListRequest $request)
+    public function list(CategoryListRequest $request, CategoryRepository $categoryRepo)
     {
         $breadcrumbs = [
             ['link' => 'admin_dashboard', 'name' => 'Dashboard'],
             ['name' => 'Categories'],
         ];
+        $categories = $categoryRepo->getForDataTable($request->all())->get();
 
-        return view('admin.category.listCategory', compact('breadcrumbs'));
+        return view('admin.category.listCategory', compact('breadcrumbs','categories'));
     }
 
     public function table(CategoryListDataRequest $request, CategoryRepository $categoryRepo)

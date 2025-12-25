@@ -13,9 +13,9 @@ class CategoryRepository implements CategoryRepositoryInterface
         $category = Category::select(['id', 'name', 'name_ar', 'status', 'parent_category_id', 'icon'])
             ->orderBy('created_at', 'desc')
             ->where(function (Builder $query) use ($data) {
-                if ($data['status'] != '') {
-                    $query->where('status', '=', $data['status']);
-                }
+                // if ($data['status'] != '') {
+                //     $query->where('status', '=', $data['status']);
+                // }
 
                 if (isset($data['category_id']) && $data['category_id'] != '') {
                     $query->where('parent_category_id', '=', $data['category_id']);

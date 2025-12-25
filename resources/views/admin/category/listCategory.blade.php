@@ -48,11 +48,11 @@
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listCategories" data-url="{{ route('admin_categories_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listCategories">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
-                        <th class="min-w-125px"> Name </th>
+                        <th class="min-w-125px">Name</th>
                         <th class="min-w-125px">Icon</th>
                         <th class="min-w-125px">Parent Category</th>
                         <th class="min-w-125px">Status</th>
@@ -61,8 +61,50 @@
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($categories as $index => $category)
+                    <tr>
+                        <td>{{ $index + 1 }}</td>
+
+                        <td>{{ $category->name }}</td>
+
+                        <td>
+                            <img src="{{ 
+                            $category->icon && Storage::disk('savomart')->exists($category->icon)
+                            ? Storage::disk('savomart')->url($category->icon)
+                            : asset('images/admin/svg/files/blank-image.svg')
+                        }}" width="40" alt="icon">
+                        </td>
+
+                        <td>
+                            {{ $category->parentCategory ? $category->parentCategory->name : '' }}
+                        </td>
+
+                        <td>{{ $category->status }}</td>
+
+                        <td>
+                            @can('categories_update')
+                            <a href="{{ route('admin_categories_edit', ['id' => $category->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('categories_delete')
+                            <form action="{{ route('admin_categories_delete', ['id' => $category->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this category?');">
+                                @csrf
+                                @method('DELETE')
+
+                                <button type="submit" class="btn btn-sm btn-light-danger">
+                                    Delete
+                                </button>
+                            </form>
+                            @endcan
+                        </td>
+
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
+
         </div>
     </div>
 </x-admin-layout>
