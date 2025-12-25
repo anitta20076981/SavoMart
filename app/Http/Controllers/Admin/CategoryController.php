@@ -45,7 +45,7 @@ class CategoryController extends Controller
                 return view('admin.elements.listLink', compact('data'));
             })
             ->editColumn('icon', function ($category) {
-                $data['src'] = $category->icon && Storage::disk('grocery')->exists($category->icon) ? Storage::disk('grocery')->url($category->icon) : asset('images/admin/svg/files/blank-image.svg');
+                $data['src'] = $category->icon && Storage::disk('savomart')->exists($category->icon) ? Storage::disk('savomart')->url($category->icon) : asset('images/admin/svg/files/blank-image.svg');
 
                 return view('admin.elements.listImage', compact('data'));
             })
@@ -89,7 +89,7 @@ class CategoryController extends Controller
 
         if ($request->hasFile('icon')) {
             $filePath = 'category/icon';
-            $input['icon'] = Storage::disk('grocery')->putFile($filePath, $request->file('icon'));
+            $input['icon'] = Storage::disk('savomart')->putFile($filePath, $request->file('icon'));
         } else {
             $input['icon'] = '';
         }
@@ -133,7 +133,7 @@ class CategoryController extends Controller
 
         if ($request->hasFile('icon')) {
             $filePath = 'category/icon';
-            $input['icon'] = Storage::disk('grocery')->putFile($filePath, $request->file('icon'));
+            $input['icon'] = Storage::disk('savomart')->putFile($filePath, $request->file('icon'));
         } elseif ($request->has('icon_remove') && $request->icon_remove) {
             $input['icon'] = '';
         }

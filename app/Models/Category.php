@@ -35,18 +35,18 @@ class Category extends Model
     // public function logoUrl(): Attribute
     // {
     //     return Attribute::make(
-    //         get: fn (mixed $value) => ($this->logo ? Storage::disk('grocery')->url($this->logo) : null),
+    //         get: fn (mixed $value) => ($this->logo ? Storage::disk('savomart')->url($this->logo) : null),
     //     );
     // }
 
     public function getLogoUrlAttribute()
     {
-        return isset($this->logo) ? Storage::disk('grocery')->url($this->logo) : null;
+        return isset($this->logo) ? Storage::disk('savomart')->url($this->logo) : null;
     }
 
     public function getIconUrlAttribute()
     {
-        return isset($this->icon) ? Storage::disk('grocery')->url($this->icon) : null;
+        return isset($this->icon) ? Storage::disk('savomart')->url($this->icon) : null;
     }
 
     public function children()

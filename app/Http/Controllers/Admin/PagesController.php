@@ -83,13 +83,13 @@ class PagesController extends Controller
 
         if ($request->hasFile('file')) {
             $filePath = 'pages/file';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('file'));
+            $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('file'));
             $data['file'] = $fileName;
         }
 
         if ($request->hasFile('thumbnail')) {
             $filePath = 'pages/thumbnail';
-            $data['thumbnail'] = Storage::disk('grocery')->putFile($filePath, $request->file('thumbnail'));
+            $data['thumbnail'] = Storage::disk('savomart')->putFile($filePath, $request->file('thumbnail'));
         } elseif ($request->has('thumbnail_remove') && $request->thumbnail_remove) {
             $data['thumbnail'] = '';
         }
@@ -126,7 +126,7 @@ class PagesController extends Controller
 
         if ($request->hasFile('file')) {
             $filePath = 'pages/file';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('file'));
+            $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('file'));
             $data['file'] = $fileName;
         } elseif ($request->has('file_remove') && $request->file_remove) {
             $data['file'] = '';
@@ -134,7 +134,7 @@ class PagesController extends Controller
 
         if ($request->hasFile('thumbnail')) {
             $filePath = 'pages/thumbnail';
-            $data['thumbnail'] = Storage::disk('grocery')->putFile($filePath, $request->file('thumbnail'));
+            $data['thumbnail'] = Storage::disk('savomart')->putFile($filePath, $request->file('thumbnail'));
         } elseif ($request->has('thumbnail_remove') && $request->thumbnail_remove) {
             $data['thumbnail'] = '';
         }

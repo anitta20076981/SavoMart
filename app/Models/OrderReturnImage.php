@@ -22,6 +22,6 @@ class OrderReturnImage extends Model
 
     public function getReturnImageUrlAttribute()
     {
-        return $this->file ? Storage::disk('grocery')->url($this->file) : '';
+        return $this->file ? Storage::disk('savomart')->url($this->file) : '';
     }
 }

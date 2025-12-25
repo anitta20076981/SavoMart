@@ -79,6 +79,6 @@ class Customer extends Authenticatable
 
     public function getProfilePictureUrlAttribute()
     {
-        return $this->profile_picture  ? Storage::disk('grocery')->url($this->profile_picture) : '';
+        return $this->profile_picture  ? Storage::disk('savomart')->url($this->profile_picture) : '';
     }
 }

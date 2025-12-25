@@ -25,9 +25,9 @@
                 </div>
                 <div class="card-body text-center pt-0">
                     <div class="fv-row fv-plugins-icon-container">
-                        <div class="image-input @if (!$application->logo || !Storage::disk('grocery')->exists($application->logo)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
-                            <div class="image-input-wrapper w-150px h-150px" @if ($application->logo && Storage::disk('grocery')->exists($application->logo)) style="background-image:
-                                url({{ Storage::disk('grocery')->url($application->logo) }})" @endif></div>
+                        <div class="image-input @if (!$application->logo || !Storage::disk('savomart')->exists($application->logo)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
+                            <div class="image-input-wrapper w-150px h-150px" @if ($application->logo && Storage::disk('savomart')->exists($application->logo)) style="background-image:
+                                url({{ Storage::disk('savomart')->url($application->logo) }})" @endif></div>
                             <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change" data-kt-initialized="1">
                                 <i class="bi bi-pencil-fill fs-7"></i>
                                 <input type="file" name="logo" accept=".png,.jpg,.jpeg">

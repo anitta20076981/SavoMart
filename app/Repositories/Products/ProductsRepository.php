@@ -165,7 +165,7 @@ class ProductsRepository implements ProductsRepositoryInterface
         $images = ProductImage::whereNotIn('id', $notInIds)->where('product_id', $productId)->where('image_role', 'BASE')->get();
 
         foreach ($images as $image) {
-            if (Storage::disk('grocery')->delete($image->image_path)) {
+            if (Storage::disk('savomart')->delete($image->image_path)) {
                 $image->delete();
             }
         }

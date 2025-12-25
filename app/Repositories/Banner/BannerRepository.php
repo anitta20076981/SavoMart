@@ -101,7 +101,7 @@ class BannerRepository implements BannerRepositoryInterface
         $items = BannerItem::whereNotIn('id', $notInIds)->where('banner_id', $bannerId)->get();
 
         foreach ($items as $item) {
-            if (Storage::disk('grocery')->delete($item->file)) {
+            if (Storage::disk('savomart')->delete($item->file)) {
                 $item->delete();
             }
         }

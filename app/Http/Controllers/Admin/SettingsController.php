@@ -64,7 +64,7 @@ class SettingsController extends Controller
             $favIcon = $request->file('fav_icon');
             $favIconName = 'favicon.' . $favIcon->getClientOriginalExtension();
             $favIconPath = 'app';
-            $file = Storage::disk('grocery')->putFileAs($favIconPath, $favIcon, $favIconName);
+            $file = Storage::disk('savomart')->putFileAs($favIconPath, $favIcon, $favIconName);
             $saveData['fav_icon'] = $file;
         } elseif ($request->has('fav_icon_remove') && $request->fav_icon_remove) {
             $saveData['fav_icon'] = '';
@@ -74,7 +74,7 @@ class SettingsController extends Controller
             $logo = $request->file('logo_light');
             $logoName = 'logo_light.' . $logo->getClientOriginalExtension();
             $logoPath = 'app';
-            $file = Storage::disk('grocery')->putFileAs($logoPath, $logo, $logoName);
+            $file = Storage::disk('savomart')->putFileAs($logoPath, $logo, $logoName);
             $saveData['logo_light'] = $file;
         } elseif ($request->has('logo_light_remove') && $request->logo_light_remove) {
             $saveData['logo_light'] = '';
@@ -84,7 +84,7 @@ class SettingsController extends Controller
             $logo = $request->file('logo_dark');
             $logoName = 'logo_dark.' . $logo->getClientOriginalExtension();
             $logoPath = 'app';
-            $file = Storage::disk('grocery')->putFileAs($logoPath, $logo, $logoName);
+            $file = Storage::disk('savomart')->putFileAs($logoPath, $logo, $logoName);
             $saveData['logo_dark'] = $file;
         } elseif ($request->has('logo_dark_remove') && $request->logo_dark_remove) {
             $saveData['logo_dark'] = '';

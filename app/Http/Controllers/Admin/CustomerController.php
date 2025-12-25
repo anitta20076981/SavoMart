@@ -99,7 +99,7 @@ class CustomerController extends Controller
 
         if ($request->hasFile('profile_image')) {
             $filePath = 'customer/profile_image';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('profile_image'));
+            $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('profile_image'));
             $inputData['profile_picture'] = $fileName;
         }
 
@@ -127,19 +127,19 @@ class CustomerController extends Controller
 
         // if ($request->hasFile('signature')) {
         //     $filePath = 'customer/signature';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('signature'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('signature'));
         //     $customerDetailsInputData['signature'] = $fileName;
         // }
 
         // if ($request->hasFile('vendor_document')) {
         //     $filePath = 'customer/vendor_document';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('vendor_document'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('vendor_document'));
         //     $customerDetailsInputData['vendor_document'] = $fileName;
         // }
 
         // if ($request->hasFile('gst_certificate')) {
         //     $filePath = 'customer/gst_certificate';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('gst_certificate'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('gst_certificate'));
         //     $customerDetailsInputData['gst_certificate'] = $fileName;
         // }
 
@@ -207,7 +207,7 @@ class CustomerController extends Controller
 
         if ($request->hasFile('profile_image')) {
             $filePath = 'customer/profile_image';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('profile_image'));
+            $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('profile_image'));
             $updateData['profile_picture'] = $fileName;
         } elseif ($request->profile_image_remove == 1) {
             $updateData['profile_picture'] = '';
@@ -235,7 +235,7 @@ class CustomerController extends Controller
         ];
         // if ($request->hasFile('signature')) {
         //     $filePath = 'customer/signature';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('signature'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('signature'));
         //     $customerDetailsUpdateData['signature'] = $fileName;
         // } elseif ($request->has('signature_remove') && $request->signature_remove) {
         //     $customerDetailsUpdateData['signature'] = '';
@@ -243,7 +243,7 @@ class CustomerController extends Controller
 
         // if ($request->hasFile('gst_certificate')) {
         //     $filePath = 'customer/gst_certificate';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('gst_certificate'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('gst_certificate'));
         //     $customerDetailsUpdateData['gst_certificate'] = $fileName;
         // } elseif ($request->has_gst == 1 && $request->hasFile('gst_certificate') == false) {
         //     $customerDetailsUpdateData['gst_certificate'] = $request->gst_certificate;
@@ -253,7 +253,7 @@ class CustomerController extends Controller
 
         // if ($request->hasFile('vendor_document')) {
         //     $filePath = 'customer/vendor_document';
-        //     $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('vendor_document'));
+        //     $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('vendor_document'));
         //     $customerDetailsUpdateData['vendor_document'] = $fileName;
         // } elseif ($request->has('vendor_document_remove') && $request->vendor_document_remove) {
         //     $customerDetailsUpdateData['vendor_document'] = '';

@@ -81,7 +81,7 @@ class UsersController extends Controller
         }
 
         if ($request->hasFile('profile_picture')) {
-            $data['profile_picture'] = Storage::disk('grocery')->putFile('users', $request->file('profile_picture'));
+            $data['profile_picture'] = Storage::disk('savomart')->putFile('users', $request->file('profile_picture'));
         }
         $user = $userRepo->createUser($data);
 
@@ -116,7 +116,7 @@ class UsersController extends Controller
         }
 
         if ($request->hasFile('profile_picture')) {
-            $data['profile_picture'] = Storage::disk('grocery')->putFile('users', $request->file('profile_picture'));
+            $data['profile_picture'] = Storage::disk('savomart')->putFile('users', $request->file('profile_picture'));
         } elseif ($request->has('profile_picture_remove') && $request->profile_picture_remove) {
             $data['profile_picture'] = '';
         }

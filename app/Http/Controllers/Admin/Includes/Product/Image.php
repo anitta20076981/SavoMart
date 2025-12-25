@@ -13,9 +13,9 @@ trait Image
         if ($request->hasFile('file')) {
             $file = $request->file('file');
             $filePath = 'products/images';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $file);
+            $fileName = Storage::disk('savomart')->putFile($filePath, $file);
             $imageFileName = explode('/', $fileName)[1];
-            $imagesUrl = Storage::disk('grocery')->url($fileName);
+            $imagesUrl = Storage::disk('savomart')->url($fileName);
 
             $inputImageData = [
                 'file' => $file,
@@ -45,7 +45,7 @@ trait Image
         $items = [];
 
         foreach ($products->productImages as $key => $item) {
-            $item->url = Storage::disk('grocery')->url($item->image_path);
+            $item->url = Storage::disk('savomart')->url($item->image_path);
             $returnArray = [
                 'id' => $item->id,
                 'fileName' => $item->image_path,
@@ -61,7 +61,7 @@ trait Image
         $image = $productsRepo->getImage($request->id);
 
         if (!$image->product_id) {
-            if (Storage::disk('grocery')->delete($image->image_path)) {
+            if (Storage::disk('savomart')->delete($image->image_path)) {
                 $productsRepo->deleteImage($request->id, $image->image_path);
             }
             $event = auth()->user()->name . 'deleted the product image';

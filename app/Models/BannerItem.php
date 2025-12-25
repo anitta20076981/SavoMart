@@ -28,6 +28,6 @@ class BannerItem extends Model
 
     public function getBannerImageUrlAttribute()
     {
-        return $this->file && $this->file ? Storage::disk('grocery')->url($this->file) : '';
+        return $this->file && $this->file ? Storage::disk('savomart')->url($this->file) : '';
     }
 }

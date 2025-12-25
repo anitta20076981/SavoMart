@@ -51,7 +51,7 @@
                                 @foreach ($data['toplistingProducts'] as $items)
                                     <tr>
                                         <td>
-                                            <img src="{{ (isset($items->product->thumbnail) && $items->product->thumbnail) != '' ? Storage::disk('grocery')->url($items->product->thumbnail) : asset('images/admin/logos/logo111.jpeg') }}" class="w-50px" alt="" />
+                                            <img src="{{ (isset($items->product->thumbnail) && $items->product->thumbnail) != '' ? Storage::disk('savomart')->url($items->product->thumbnail) : asset('images/admin/logos/logo111.jpeg') }}" class="w-50px" alt="" />
                                         </td>
                                         <td class="ps-0">
                                             <a class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6 text-start pe-0"> {{ $items->product->name ?? '' }}</a>

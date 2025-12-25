@@ -65,8 +65,8 @@
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">Fav Icon</label>
                         <div class="col-lg-8">
                             <div class="image-input image-input-outline image-input-placeholder" data-kt-image-input="true">
-                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('fav_icon')->value && Storage::disk('grocery')->exists($settings->get('fav_icon')->value)) style="background-image:
-                                    url({{ Storage::disk('grocery')->url($settings->get('fav_icon')->value) }})" @endif>
+                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('fav_icon')->value && Storage::disk('savomart')->exists($settings->get('fav_icon')->value)) style="background-image:
+                                    url({{ Storage::disk('savomart')->url($settings->get('fav_icon')->value) }})" @endif>
                                 </div>
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change">
                                     <i class="bi bi-pencil-fill fs-7"></i>
@@ -76,7 +76,7 @@
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
-                                @if ($settings->get('fav_icon')->value && Storage::disk('grocery')->exists($settings->get('fav_icon')->value))
+                                @if ($settings->get('fav_icon')->value && Storage::disk('savomart')->exists($settings->get('fav_icon')->value))
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
@@ -89,8 +89,8 @@
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">Dark Logo</label>
                         <div class="col-lg-8">
                             <div class="image-input image-input-outline image-input-placeholder" data-kt-image-input="true">
-                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('logo_dark')->value && Storage::disk('grocery')->exists($settings->get('fav_icon')->value)) style="background-image:
-                                    url({{ Storage::disk('grocery')->url($settings->get('logo_dark')->value) }})" @endif>
+                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('logo_dark')->value && Storage::disk('savomart')->exists($settings->get('fav_icon')->value)) style="background-image:
+                                    url({{ Storage::disk('savomart')->url($settings->get('logo_dark')->value) }})" @endif>
                                 </div>
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change">
                                     <i class="bi bi-pencil-fill fs-7"></i>
@@ -100,7 +100,7 @@
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
-                                @if ($settings->get('logo_dark')->value && Storage::disk('grocery')->exists($settings->get('logo_dark')->value))
+                                @if ($settings->get('logo_dark')->value && Storage::disk('savomart')->exists($settings->get('logo_dark')->value))
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
@@ -113,8 +113,8 @@
                         <label class="col-lg-4 col-form-label fw-semibold fs-6">Light Logo</label>
                         <div class="col-lg-8">
                             <div class="image-input image-input-outline image-input-placeholder" data-kt-image-input="true">
-                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('logo_light')->value && Storage::disk('grocery')->exists($settings->get('fav_icon')->value)) style="background-image:
-                                    url({{ Storage::disk('grocery')->url($settings->get('logo_light')->value) }})" @endif>
+                                <div class="image-input-wrapper w-125px h-125px" @if ($settings->get('logo_light')->value && Storage::disk('savomart')->exists($settings->get('fav_icon')->value)) style="background-image:
+                                    url({{ Storage::disk('savomart')->url($settings->get('logo_light')->value) }})" @endif>
                                 </div>
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change">
                                     <i class="bi bi-pencil-fill fs-7"></i>
@@ -124,7 +124,7 @@
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
-                                @if ($settings->get('logo_light')->value && Storage::disk('grocery')->exists($settings->get('logo_light')->value))
+                                @if ($settings->get('logo_light')->value && Storage::disk('savomart')->exists($settings->get('logo_light')->value))
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>

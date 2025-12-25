@@ -188,7 +188,7 @@ class ProductController extends Controller
                 $filePath = 'products/thumbnail';
                 $productImages = [
                     'product_id' => $product->id,
-                    'image_path' => Storage::disk('grocery')->putFile($filePath, $request->file('thumbnail')),
+                    'image_path' => Storage::disk('savomart')->putFile($filePath, $request->file('thumbnail')),
                     'image_role' => 'THUMBNAIL',
                 ];
                 $this->productRepo->saveImages($productImages);
@@ -237,7 +237,7 @@ class ProductController extends Controller
     public function view(Request $request, ProductsRepository $productRepo)
     {
         $product = $productRepo->get($request->id);
-        $image = $product ? ($product->thumbnail && Storage::disk('grocery')->exists($product->thumbnail) ? Storage::disk('grocery')->url($product->thumbnail) : asset('images/admin/logos/logo-trans.png')) : '';
+        $image = $product ? ($product->thumbnail && Storage::disk('savomart')->exists($product->thumbnail) ? Storage::disk('savomart')->url($product->thumbnail) : asset('images/admin/logos/logo-trans.png')) : '';
 
         if ($request->expectsJson()) {
             $responce['html'] = (string) view('admin.products.viewProduct', compact('product', 'image'));
@@ -430,7 +430,7 @@ class ProductController extends Controller
                 $filePath = 'products/thumbnail';
                 $productImages = [
                     'product_id' => $product->id,
-                    'image_path' => Storage::disk('grocery')->putFile($filePath, $request->file('thumbnail')),
+                    'image_path' => Storage::disk('savomart')->putFile($filePath, $request->file('thumbnail')),
                     'image_role' => 'THUMBNAIL',
                 ];
                 $currentProduct->productThumbnail != null ? $this->productRepo->updateThumbnail($productImages) :
@@ -713,7 +713,7 @@ class ProductController extends Controller
 
         if ($review->images) {
             foreach ($review->images as $image) {
-                $images[] = $image ? ($image->file && Storage::disk('grocery')->exists($image->file) ? Storage::disk('grocery')->url($image->file) : asset('images/admin/logos/logo-trans.png')) : '';
+                $images[] = $image ? ($image->file && Storage::disk('savomart')->exists($image->file) ? Storage::disk('savomart')->url($image->file) : asset('images/admin/logos/logo-trans.png')) : '';
             }
         }
 

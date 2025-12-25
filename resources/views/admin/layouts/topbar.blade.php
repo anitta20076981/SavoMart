@@ -20,13 +20,13 @@
             </div>
             <div class="app-navbar-item ms-1 ms-md-3" id="kt_header_user_menu_toggle">
                 <div class="cursor-pointer symbol symbol-circle symbol-35px symbol-md-45px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-                    <img src="{{ auth()->user()->profile_picture && Storage::disk('grocery')->exists(auth()->user()->profile_picture) ? Storage::disk('grocery')->url(auth()->user()->profile_picture) : asset('images/admin/avatars/blank.png') }}" alt="user" />
+                    <img src="{{ auth()->user()->profile_picture && Storage::disk('savomart')->exists(auth()->user()->profile_picture) ? Storage::disk('savomart')->url(auth()->user()->profile_picture) : asset('images/admin/avatars/blank.png') }}" alt="user" />
                 </div>
                 <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
                     <div class="menu-item px-3">
                         <div class="menu-content d-flex align-items-center px-3">
                             <div class="symbol symbol-50px me-5">
-                                <img alt="Logo" src="{{ auth()->user()->profile_picture && Storage::disk('grocery')->exists(auth()->user()->profile_picture) ? Storage::disk('grocery')->url(auth()->user()->profile_picture) : asset('images/admin/avatars/blank.png') }}" />
+                                <img alt="Logo" src="{{ auth()->user()->profile_picture && Storage::disk('savomart')->exists(auth()->user()->profile_picture) ? Storage::disk('savomart')->url(auth()->user()->profile_picture) : asset('images/admin/avatars/blank.png') }}" />
                             </div>
                             <div class="d-flex flex-column">
                                 <div class="fw-bold d-flex align-items-center fs-5">{{ auth()->user()->name }}

@@ -24,7 +24,7 @@ class Banner extends Model
 
         static::deleted(function ($model) {
             foreach ($model->items() as $item) {
-                if (Storage::disk('grocery')->delete($item->file)) {
+                if (Storage::disk('savomart')->delete($item->file)) {
                     $item->delete();
                 }
             }

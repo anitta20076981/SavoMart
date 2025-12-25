@@ -43,12 +43,12 @@ class Product extends Model
 
         static::deleted(function ($model) {
             foreach ($model->productImages as $item) {
-                if (Storage::disk('grocery')->delete($item->image_path)) {
+                if (Storage::disk('savomart')->delete($item->image_path)) {
                     $item->delete();
                 }
             }
 
-            if ($model->productThumbnail && Storage::disk('grocery')->delete($model->thumbnail)) {
+            if ($model->productThumbnail && Storage::disk('savomart')->delete($model->thumbnail)) {
                 $model->productThumbnail()->delete();
             }
 
@@ -160,7 +160,7 @@ class Product extends Model
 
     public function getThumbnailUrlAttribute()
     {
-        return $this->productThumbnail && $this->productThumbnail->image_path ? Storage::disk('grocery')->url($this->productThumbnail->image_path) : '';
+        return $this->productThumbnail && $this->productThumbnail->image_path ? Storage::disk('savomart')->url($this->productThumbnail->image_path) : '';
     }
 
     public function categories()

@@ -26,9 +26,9 @@
                 </div>
                 <div class="card-body text-center pt-0">
                     <div class="fv-row fv-plugins-icon-container">
-                        <div class="image-input @if (!$thumbnail || !Storage::disk('grocery')->exists($thumbnail)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
-                            <div class="image-input-wrapper w-150px h-150px" @if ($thumbnail && Storage::disk('grocery')->exists($thumbnail)) style="background-image:
-                                url({{ Storage::disk('grocery')->url($thumbnail) }})" @endif></div>
+                        <div class="image-input @if (!$thumbnail || !Storage::disk('savomart')->exists($thumbnail)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
+                            <div class="image-input-wrapper w-150px h-150px" @if ($thumbnail && Storage::disk('savomart')->exists($thumbnail)) style="background-image:
+                                url({{ Storage::disk('savomart')->url($thumbnail) }})" @endif></div>
                             <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change" data-kt-initialized="1">
                                 <i class="bi bi-pencil-fill fs-7"></i>
                                 <input type="file" name="thumbnail" accept=".png,.jpg,.jpeg">
@@ -407,7 +407,7 @@
                                                                             <div class="d-flex align-items-center">
                                                                                 <div class="symbol symbol-45px me-5">
                                                                                     @if ($variation->thumbnail)
-                                                                                        <img src="{{ Storage::disk('grocery')->url($variation->thumbnail) }}" alt="">
+                                                                                        <img src="{{ Storage::disk('savomart')->url($variation->thumbnail) }}" alt="">
                                                                                     @else
                                                                                         <img alt="Logo" src="{{ asset('images/admin/logos/logo111.jpeg') }}" class="h-45px logo" />
                                                                                     @endif

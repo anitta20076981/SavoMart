@@ -13,9 +13,9 @@ trait Image
         if ($request->hasFile('file')) {
             $file = $request->file('file');
             $filePath = 'banner';
-            $fileName = Storage::disk('grocery')->putFile($filePath, $file);
+            $fileName = Storage::disk('savomart')->putFile($filePath, $file);
             $imageFileName = explode('/', $fileName)[1];
-            $imagesUrl = Storage::disk('grocery')->url($fileName);
+            $imagesUrl = Storage::disk('savomart')->url($fileName);
 
             $inputImageData = [
                 'file' => $file,
@@ -43,7 +43,7 @@ trait Image
         $items = [];
 
         foreach ($banner->items as $key => &$item) {
-            $item->url = Storage::disk('grocery')->url($item->file);
+            $item->url = Storage::disk('savomart')->url($item->file);
             $returnArray = [
                 'id' => $item->id,
                 'fileName' => $item->file,
@@ -61,7 +61,7 @@ trait Image
         $bannerItem = $bannerRepo->getBannerItem($request->id);
 
         if (!$bannerItem->banner_id) {
-            if (Storage::disk('grocery')->delete($request->file)) {
+            if (Storage::disk('savomart')->delete($request->file)) {
                 $bannerRepo->deleteImage($request->id, $request->file);
             }
         }

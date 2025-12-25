@@ -30,8 +30,8 @@ class CategoryController extends Controller
             return [
                 'id' => $items->id,
                 'name' => ($language_type == 'en') ? $items->name : $items->name_ar,
-                'logo' => $items->logo != '' ? Storage::disk('grocery')->url($items->logo) : '',
-                'icon' => $items->icon != '' ? Storage::disk('grocery')->url($items->icon) : '',
+                'logo' => $items->logo != '' ? Storage::disk('savomart')->url($items->logo) : '',
+                'icon' => $items->icon != '' ? Storage::disk('savomart')->url($items->icon) : '',
                 'status' => $items->status,
             ];
 
@@ -54,8 +54,8 @@ class CategoryController extends Controller
             return [
                 'id' => $items->id,
                 'name' => ($language_type == 'en') ? $items->name : $items->name_ar,
-                'logo' => $items->logo != '' ? Storage::disk('grocery')->url($items->logo) : '',
-                'icon' => $items->icon != '' ? Storage::disk('grocery')->url($items->icon) : '',
+                'logo' => $items->logo != '' ? Storage::disk('savomart')->url($items->logo) : '',
+                'icon' => $items->icon != '' ? Storage::disk('savomart')->url($items->icon) : '',
                 'status' => $items->status,
                 'sub_category' => $this->chiledCategory($items->id, $language_type),
             ];
@@ -71,7 +71,7 @@ class CategoryController extends Controller
         $productImage = $productImage->map(function ($items, $key) {
             return [
                 'image_role' => $items->image_role,
-                'image_path' => $items->image_path != '' ? Storage::disk('grocery')->url($items->image_path) : '',
+                'image_path' => $items->image_path != '' ? Storage::disk('savomart')->url($items->image_path) : '',
                 'alt_text' => $items->alt_text,
             ];
         });
@@ -122,8 +122,8 @@ class CategoryController extends Controller
         return [
             'id' => $category->id,
             'name' => ($language_type == 'en') ? $category->name : $category->name_ar,
-            'logo' => $category->logo != '' ? Storage::disk('grocery')->url($category->logo) : '',
-            'icon' => $category->icon != '' ? Storage::disk('grocery')->url($category->icon) : '',
+            'logo' => $category->logo != '' ? Storage::disk('savomart')->url($category->logo) : '',
+            'icon' => $category->icon != '' ? Storage::disk('savomart')->url($category->icon) : '',
             'status' => $category->status,
             'parent_products' => $this->getproductByCategoryId($category->id, $language_type,$searchText=""),
         ];
@@ -140,8 +140,8 @@ class CategoryController extends Controller
             'id' => $categories->id,
             'name' => ($language_type == 'en') ? $categories->name : $categories->name_ar,
             'parent_category_id' => $categories->parent_category_id,
-            'logo' => $categories->logo != '' ? Storage::disk('grocery')->url($categories->logo) : '',
-            'icon' => $categories->icon != '' ? Storage::disk('grocery')->url($categories->icon) : '',
+            'logo' => $categories->logo != '' ? Storage::disk('savomart')->url($categories->logo) : '',
+            'icon' => $categories->icon != '' ? Storage::disk('savomart')->url($categories->icon) : '',
             'status' => $categories->status,
             'products' => $this->getproductByCategoryId($categories->id, $language_type,$searchText),
 
@@ -210,8 +210,8 @@ class CategoryController extends Controller
     //         'id' => $categories->id,
     //         'name' => $categories->name,
     //         'parent_category_id' => $categories->parent_category_id,
-    //         'logo' => $categories->logo != '' ? Storage::disk('grocery')->url($categories->logo) : '',
-    //         'icon' => $categories->icon != '' ? Storage::disk('grocery')->url($categories->icon) : '',
+    //         'logo' => $categories->logo != '' ? Storage::disk('savomart')->url($categories->logo) : '',
+    //         'icon' => $categories->icon != '' ? Storage::disk('savomart')->url($categories->icon) : '',
     //         'status' => $categories->status,
     //         'products' => $this->getproductByCategoryId($categories->id),
     //         'parent_category' => ($categories->parent_category_id !== 1) ? $this->getParentCategoryAndProduct($categories->parent_category_id) : null,

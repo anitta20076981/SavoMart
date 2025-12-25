@@ -27,6 +27,6 @@ class ProductImage extends Model
 
     public function getImageUrlAttribute()
     {
-        return $this->image_path ? Storage::disk('grocery')->url($this->image_path) : '';
+        return $this->image_path ? Storage::disk('savomart')->url($this->image_path) : '';
     }
 }

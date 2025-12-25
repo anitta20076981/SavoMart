@@ -23,9 +23,9 @@
                 </div>
                 <div class="card-body text-center pt-0">
                     <div class="fv-row fv-plugins-icon-container">
-                        <div class="image-input @if (!$contents->thumbnail || !Storage::disk('grocery')->exists($contents->thumbnail)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
-                            <div class="image-input-wrapper w-150px h-150px" @if ($contents->thumbnail && Storage::disk('grocery')->exists($contents->thumbnail)) style="background-image:
-                                url({{ Storage::disk('grocery')->url($contents->thumbnail) }})" @endif></div>
+                        <div class="image-input @if (!$contents->thumbnail || !Storage::disk('savomart')->exists($contents->thumbnail)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
+                            <div class="image-input-wrapper w-150px h-150px" @if ($contents->thumbnail && Storage::disk('savomart')->exists($contents->thumbnail)) style="background-image:
+                                url({{ Storage::disk('savomart')->url($contents->thumbnail) }})" @endif></div>
                             <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change" data-kt-initialized="1">
                                 <i class="bi bi-pencil-fill fs-7"></i>
                                 <input type="file" name="thumbnail" accept=".png,.jpg,.jpeg">
@@ -116,7 +116,7 @@
                             <label class="required form-label">File</label>
                             @if ($contents->file)
                             <div class="d-flex align-items-center file-container">
-                                <a href="{{ Storage::disk('grocery')->url($contents->file) }}" class="text-gray-800 text-hover-primary">
+                                <a href="{{ Storage::disk('savomart')->url($contents->file) }}" class="text-gray-800 text-hover-primary">
                                     <span class="svg-icon svg-icon-2x svg-icon-primary me-4">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3" d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22Z" fill="currentColor"></path>
@@ -132,7 +132,7 @@
                             <input type="hidden" name="file_label" value="1">
                             @endif
                             <input type="hidden" name="file_remove" id="file_remove">
-                            <input type="file" name="file" class="form-control mb-2" placeholder="File" value="" @if ($contents->file && Storage::disk('grocery')->exists($contents->file)) style="display:none;" @endif>
+                            <input type="file" name="file" class="form-control mb-2" placeholder="File" value="" @if ($contents->file && Storage::disk('savomart')->exists($contents->file)) style="display:none;" @endif>
                             @error('file')
                             <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
                             @enderror

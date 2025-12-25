@@ -323,7 +323,7 @@ trait Configuration
                 $filePath = 'products/thumbnail';
                 $productImages = [
                     'product_id' => $product->id,
-                    'image_path' => Storage::disk('grocery')->putFile($filePath, $variation['thumb']),
+                    'image_path' => Storage::disk('savomart')->putFile($filePath, $variation['thumb']),
                     'image_role' => 'THUMBNAIL',
                 ];
                 $this->productRepo->saveImages($productImages);

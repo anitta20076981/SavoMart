@@ -41,9 +41,9 @@
                                         </div>
                                         <div class="card-body text-center pt-0">
                                             <div class="fv-row fv-plugins-icon-container">
-                                                <div class="image-input @if (!$customer->profile_picture || !Storage::disk('grocery')->exists($customer->profile_picture)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
-                                                    <div class="image-input-wrapper w-150px h-150px" @if ($customer->profile_picture && Storage::disk('grocery')->exists($customer->profile_picture)) style="background-image:
-                                                                url({{ Storage::disk('grocery')->url($customer->profile_picture) }})" @endif></div>
+                                                <div class="image-input @if (!$customer->profile_picture || !Storage::disk('savomart')->exists($customer->profile_picture)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
+                                                    <div class="image-input-wrapper w-150px h-150px" @if ($customer->profile_picture && Storage::disk('savomart')->exists($customer->profile_picture)) style="background-image:
+                                                                url({{ Storage::disk('savomart')->url($customer->profile_picture) }})" @endif></div>
                                                     <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change" data-kt-initialized="1">
                                                         <i class="bi bi-pencil-fill fs-7"></i>
                                                         <input type="file" name="profile_image" accept=".png,.jpg,.jpeg">

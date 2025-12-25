@@ -152,7 +152,7 @@ class CartController extends Controller
         $productImage = $productImage->map(function ($items, $key) {
             return [
                 'image_role' => $items->image_role,
-                'image_path' => $items->image_path != '' ? Storage::disk('grocery')->url($items->image_path) : '',
+                'image_path' => $items->image_path != '' ? Storage::disk('savomart')->url($items->image_path) : '',
                 'alt_text' => $items->alt_text,
             ];
         });

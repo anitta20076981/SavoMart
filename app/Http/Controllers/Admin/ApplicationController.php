@@ -66,7 +66,7 @@ class ApplicationController extends Controller
         ];
 
         if ($request->hasFile('logo')) {
-            $inputData['logo'] = Storage::disk('grocery')->putFile('applications', $request->file('logo'));
+            $inputData['logo'] = Storage::disk('savomart')->putFile('applications', $request->file('logo'));
         }
 
         $application = $applicationRepo->createApplication($inputData);
@@ -98,7 +98,7 @@ class ApplicationController extends Controller
         ];
 
         if ($request->hasFile('logo')) {
-            $fileName = Storage::disk('grocery')->putFile('applications', $request->file('logo'));
+            $fileName = Storage::disk('savomart')->putFile('applications', $request->file('logo'));
             $inputData['logo'] = $fileName;
         } elseif ($request->logo_remove == 1) {
             $inputData['logo'] = '';

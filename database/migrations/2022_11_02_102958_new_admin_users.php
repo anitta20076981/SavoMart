@@ -21,28 +21,28 @@ return new class() extends Migration
         Role::where('name', 'super_privilege')->delete();
         $savoMartAdminRole = Role::create(['name' => 'super_privilege', 'guard_name' => 'admin']);
 
-        User::where('email', 'web@gmail.com')->forceDelete();
+        User::where('email', 'savomart@gmail.com')->forceDelete();
         $savoMartAdminUser = new User();
         $savoMartAdminUser->status = true;
         $savoMartAdminUser->name = 'savoMart Admin';
-        $savoMartAdminUser->email = 'web@gmail.com';
-        $savoMartAdminUser->password = Hash::make('Grocery@01');
+        $savoMartAdminUser->email = 'savomart@gmail.com';
+        $savoMartAdminUser->password = Hash::make('SavoMart@01');
         $savoMartAdminUser->save();
         $savoMartAdminUser->assignRole($savoMartAdminRole);
 
-        // Grocery Admin
-        Role::where('name', 'grocery_admin')->delete();
-        $groceryAdminRole = Role::create(['name' => 'grocery_admin', 'guard_name' => 'admin']);
+        // savomart Admin
+        Role::where('name', 'savomart_admin')->delete();
+        $savoMartAdminRole = Role::create(['name' => 'savomart_admin', 'guard_name' => 'admin']);
 
-        User::where('email', 'admin@grocery.com')->forceDelete();
-        $groceryAdminUser = new User();
-        $groceryAdminUser->name = 'Grocery Admin';
-        $groceryAdminUser->status = true;
-        $groceryAdminUser->email = 'admin@grocery.com';
-        $groceryAdminUser->password = Hash::make('Grocery@01');
-        $groceryAdminUser->deleted_at = null;
-        $groceryAdminUser->save();
-        $groceryAdminUser->assignRole($groceryAdminRole);
+        User::where('email', 'admin@savomart.com')->forceDelete();
+        $savoMartAdminUser = new User();
+        $savoMartAdminUser->name = 'SavoMart Admin';
+        $savoMartAdminUser->status = true;
+        $savoMartAdminUser->email = 'admin@savomart.com';
+        $savoMartAdminUser->password = Hash::make('SavoMart@01');
+        $savoMartAdminUser->deleted_at = null;
+        $savoMartAdminUser->save();
+        $savoMartAdminUser->assignRole($savoMartAdminRole);
     }
 
     /**
@@ -53,8 +53,8 @@ return new class() extends Migration
     public function down()
     {
         Role::where('name', 'super_privilege')->delete();
-        Role::where('name', 'grocery_admin')->delete();
-        User::where('email', 'web@gmail.com')->forceDelete();
-        User::where('email', 'admin@grocery.com')->forceDelete();
+        Role::where('name', 'savomart_admin')->delete();
+        User::where('email', 'savomart@gmail.com')->forceDelete();
+        User::where('email', 'admin@savomart.com')->forceDelete();
     }
 };

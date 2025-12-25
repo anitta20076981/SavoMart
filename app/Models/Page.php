@@ -38,12 +38,12 @@ class Page extends Model
 
     public function getFileUrlAttribute()
     {
-        return $this->file ? Storage::disk('grocery')->url($this->file) : '';
+        return $this->file ? Storage::disk('savomart')->url($this->file) : '';
     }
 
     public function getThumbnailUrlAttribute()
     {
-        return $this->thumbnail ? Storage::disk('grocery')->url($this->thumbnail) : '';
+        return $this->thumbnail ? Storage::disk('savomart')->url($this->thumbnail) : '';
     }
 
     public function images()

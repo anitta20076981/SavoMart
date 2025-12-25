@@ -62,9 +62,9 @@ class OrderReturnController extends Controller
             if ($request->hasFile('images')) {
                 foreach ($request->images as $id => $file) {
                     $filePath = 'order_return/images';
-                    $fileName = Storage::disk('grocery')->putFile($filePath, $file);
+                    $fileName = Storage::disk('savomart')->putFile($filePath, $file);
                     $imageFileName = explode('/', $fileName)[1];
-                    $imagesUrl = Storage::disk('grocery')->url($fileName);
+                    $imagesUrl = Storage::disk('savomart')->url($fileName);
 
                     $inputImageData = [
                         'order_return_id' => $orderReturn->id,
@@ -127,9 +127,9 @@ class OrderReturnController extends Controller
 
                 foreach ($request->images as $id => $file) {
                     $filePath = 'order_return/images';
-                    $fileName = Storage::disk('grocery')->putFile($filePath, $file);
+                    $fileName = Storage::disk('savomart')->putFile($filePath, $file);
                     $imageFileName = explode('/', $fileName)[1];
-                    $imagesUrl = Storage::disk('grocery')->url($fileName);
+                    $imagesUrl = Storage::disk('savomart')->url($fileName);
 
                     $inputImageData = [
                         'order_return_id' => $orderReturn->id,

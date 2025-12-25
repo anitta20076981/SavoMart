@@ -115,7 +115,7 @@ trait Invoice
             $filePath = 'order/invoice/';
 
             $pdf = PDF::loadView('admin.order.invoicepdfTemplate', ['invoicedata' => $invoicedata, 'settings' => $settings, 'currency' => $currency, 'order' => $order, 'invoice_total_amount' => $invoice_total_amount, 'invoice_tax_amount' => $invoice_tax_amount]);
-            Storage::disk('grocery')->put($filePath . $invoiceNo . '_invoice.pdf', $pdf->output());
+            Storage::disk('savomart')->put($filePath . $invoiceNo . '_invoice.pdf', $pdf->output());
 
 
         } catch (Exception $e) {

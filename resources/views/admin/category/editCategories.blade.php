@@ -89,9 +89,9 @@
                             </div>
                             <div class="fv-row fv-plugins-icon-container">
                                 <label class="form-label">Icon</label><br>
-                                <div class="image-input @if (!$category->icon || !Storage::disk('grocery')->exists($category->icon)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
-                                    <div class="image-input-wrapper w-150px h-150px" @if ($category->icon && Storage::disk('grocery')->exists($category->icon)) style="background-image:
-                                        url({{ Storage::disk('grocery')->url($category->icon) }})" @endif></div>
+                                <div class="image-input @if (!$category->icon || !Storage::disk('savomart')->exists($category->icon)) image-input-empty @endif image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
+                                    <div class="image-input-wrapper w-150px h-150px" @if ($category->icon && Storage::disk('savomart')->exists($category->icon)) style="background-image:
+                                        url({{ Storage::disk('savomart')->url($category->icon) }})" @endif></div>
                                     <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" aria-label="Change" data-kt-initialized="1">
                                         <i class="bi bi-pencil-fill fs-7"></i>
                                         <input type="file" name="icon" accept=".png,.jpg,.jpeg">

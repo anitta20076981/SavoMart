@@ -84,7 +84,7 @@ class OrderReturnRepository implements OrderReturnRepositoryInterface
         $items = OrderReturnImage::whereNotIn('id', $notInIds)->where('order_return_id', $bannerId)->get();
 
         foreach ($items as $item) {
-            if (Storage::disk('grocery')->delete($item->file)) {
+            if (Storage::disk('savomart')->delete($item->file)) {
                 $item->delete();
             }
         }

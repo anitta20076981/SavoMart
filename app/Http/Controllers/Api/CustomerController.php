@@ -199,7 +199,7 @@ class CustomerController extends Controller
             ];
             if ($request->hasFile('profile_picture')) {
                 $filePath = 'customer/profile_picture';
-                $fileName = Storage::disk('grocery')->putFile($filePath, $request->file('profile_picture'));
+                $fileName = Storage::disk('savomart')->putFile($filePath, $request->file('profile_picture'));
                 $updateData['profile_picture'] = $fileName;
             }
             $customer = $customerRepo->update($updateData);
