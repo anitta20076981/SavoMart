@@ -34,7 +34,7 @@ class OrderController extends Controller
     use Invoice;
     use Shipment;
 
-    public function list(OrderListRequest $request)
+    public function list(OrderListRequest $request, OrderRepository $orderRepo)
     {
 
         $breadcrumbs = [
@@ -42,8 +42,9 @@ class OrderController extends Controller
         ];
 
         $status = (isset($request->status) ? $request->status : '');
+        $orders = $orderRepo->getForDatatable($request->all())->get();
 
-        return view('admin.order.listOrder', compact('breadcrumbs', 'status'));
+        return view('admin.order.listOrder', compact('breadcrumbs', 'status','orders'));
     }
 
     public function table(OrderListDataRequest $request, OrderRepository $orderRepo)

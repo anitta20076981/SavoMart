@@ -78,12 +78,12 @@ if (!function_exists('sideMenu')) {
                         'active' => routeMatch(['admin_order_list', 'admin_order_add', 'admin_order_edit']),
                         'url' => route('admin_order_list'),
                     ],
-                    [
-                        'name' => __('Order Returns'),
-                        'permission' => ['order_return_read'],
-                        'active' => routeMatch(['admin_order_return_list', 'admin_order_return_add', 'admin_order_return_edit']),
-                        'url' => route('admin_order_return_list'),
-                    ],
+                    // [
+                    //     'name' => __('Order Returns'),
+                    //     'permission' => ['order_return_read'],
+                    //     'active' => routeMatch(['admin_order_return_list', 'admin_order_return_add', 'admin_order_return_edit']),
+                    //     'url' => route('admin_order_return_list'),
+                    // ],
                 ],
             ],
             [
