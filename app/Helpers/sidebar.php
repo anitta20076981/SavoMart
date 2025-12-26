@@ -15,12 +15,12 @@ if (!function_exists('sideMenu')) {
                     'admin_pages_list', 'admin_pages_add', 'admin_pages_edit',
                 ]),
                 'child' => [
-                    [
-                        'name' => __('Contents'),
-                        'permission' => ['contents_read'],
-                        'active' => routeMatch(['admin_contents_list', 'admin_contents_add', 'admin_contents_edit']),
-                        'url' => route('admin_contents_list'),
-                    ],
+                    // [
+                    //     'name' => __('Contents'),
+                    //     'permission' => ['contents_read'],
+                    //     'active' => routeMatch(['admin_contents_list', 'admin_contents_add', 'admin_contents_edit']),
+                    //     'url' => route('admin_contents_list'),
+                    // ],
                     [
                         'name' => __('Banner'),
                         'permission' => ['banner_read'],
@@ -42,12 +42,12 @@ if (!function_exists('sideMenu')) {
                 'permission' => ['role_read', 'user_read'],
                 'active' => routeMatch(['admin_role_list', 'admin_role_add', 'admin_role_edit', 'admin_role_view', 'admin_user_list', 'admin_user_add', 'admin_user_edit', 'admin_user_view','admin_customer_list', 'admin_customer_add', 'admin_customer_edit', 'admin_customer_view']),
                 'child' => [
-                    [
-                        'name' => __('Users'),
-                        'permission' => ['user_read'],
-                        'active' => routeMatch(['admin_user_list', 'admin_user_add', 'admin_user_edit', 'admin_user_view']),
-                        'url' => route('admin_user_list'),
-                    ],
+                    // [
+                    //     'name' => __('Users'),
+                    //     'permission' => ['user_read'],
+                    //     'active' => routeMatch(['admin_user_list', 'admin_user_add', 'admin_user_edit', 'admin_user_view']),
+                    //     'url' => route('admin_user_list'),
+                    // ],
                     [
                         'name' => __('Mobile Users'),
                         'permission' => ['customer_read'],

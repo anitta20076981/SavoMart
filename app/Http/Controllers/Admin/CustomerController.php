@@ -24,14 +24,16 @@ class CustomerController extends Controller
 {
     use Address;
 
-    public function list(CustomerListRequest $request)
+    public function list(CustomerListRequest $request,CustomerRepository $customerRepo)
     {
         $breadcrumbs = [
             ['link' => 'admin_dashboard', 'name' => 'Dashboard'],
             ['name' => 'Customer'],
         ];
 
-        return view('admin.customer.listCustomers', compact('breadcrumbs'));
+        $customers = $customerRepo->getForDatatable($request->all())->get();
+
+        return view('admin.customer.listCustomers', compact('breadcrumbs','customers'));
     }
 
     public function table(CustomerListDataRequest $request, CustomerRepository $customerRepo)

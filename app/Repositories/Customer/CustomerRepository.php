@@ -14,9 +14,9 @@ class CustomerRepository implements CustomerRepositoryInterface
         $customer = Customer::select(['*'])
             ->orderBy('created_at', 'desc')
             ->where(function (Builder $query) use ($data) {
-                if ($data['status'] != '') {
-                    $query->where('status', '=', $data['status']);
-                }
+                // if ($data['status'] != '') {
+                //     $query->where('status', '=', $data['status']);
+                // }
             });
 
         return $customer;

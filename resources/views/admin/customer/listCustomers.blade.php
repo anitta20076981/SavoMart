@@ -1,11 +1,10 @@
 @section('title', 'List Customers')
 
 @push('script')
-    <script src="{{ mix('js/admin/customer/listCustomer.js') }}"></script>
 @endpush
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/admin/customer/listCustomer.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ mix('css/admin/customer/listCustomer.css') }}">
 @endpush
 
 <x-admin-layout>
@@ -35,12 +34,12 @@
                     </div>
                 </div>
                 @can('brand_create')
-                    <a href="{{ route('admin_customer_add') }}" class="btn btn-primary">Add Customer</a>
+                <a href="{{ route('admin_customer_add') }}" class="btn btn-primary">Add Customer</a>
                 @endcan
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listCustomer" data-url="{{ route('admin_customer_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
@@ -53,7 +52,54 @@
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($customers as $index => $customer)
+                    <tr>
+                        {{-- Index --}}
+                        <td>{{ $index + 1 }}</td>
+
+                        {{-- First Name (link if permitted) --}}
+                        <td>
+                            @can('customer_update')
+                            <a href="{{ route('admin_customer_edit', ['id' => $customer->id]) }}" class="text-gray-800 text-hover-primary fw-bold">
+                                {{ $customer->first_name }}
+                            </a>
+                            @else
+                            {{ $customer->first_name }}
+                            @endcan
+                        </td>
+
+                        {{-- Status --}}
+                        <td>
+                            @include('admin.elements.listStatus', ['data' => $customer])
+                        </td>
+
+                        {{-- Approve --}}
+                        <td>
+                            @include('admin.elements.listApproval', ['data' => $customer])
+                        </td>
+
+                        {{-- Actions --}}
+                        <td>
+                            @can('customer_update')
+                            <a href="{{ route('admin_customer_edit', ['id' => $customer->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('customer_delete')
+                            <form action="{{ route('admin_customer_delete', ['id' => $customer->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this customer?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm btn-light-danger">
+                                    Delete
+                                </button>
+                            </form>
+                            @endcan
+                        </td>
+                    </tr>
+                    @endforeach
                 </tbody>
+
             </table>
         </div>
     </div>
