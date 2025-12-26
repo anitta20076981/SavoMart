@@ -1,11 +1,10 @@
 @section('title', 'List Pages')
 
 @push('script')
-    <script src="{{ mix('js/admin/pages/listPages.js') }}"></script>
 @endpush
 
 @push('style')
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/admin/pages/listPages.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ mix('css/admin/pages/listPages.css') }}">
 @endpush
 
 <x-admin-layout :breadcrumbs="$breadcrumbs">
@@ -40,7 +39,7 @@
             </x-dt-toolbar>
         </div>
         <div class="card-body pt-0">
-            <table class="table align-middle table-row-dashed fs-6 gy-5" id="listPages" data-url="{{ route('admin_pages_table') }}">
+            <table class="table align-middle table-row-dashed fs-6 gy-5">
                 <thead>
                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                         <th>#</th>
@@ -53,7 +52,50 @@
                 </thead>
 
                 <tbody class="fw-semibold text-gray-600">
+                    @foreach ($pages as $index => $page)
+                    <tr>
+                        {{-- Index --}}
+                        <td>{{ $index + 1 }}</td>
+
+                        {{-- Name (clickable if allowed) --}}
+                        <td>
+                            @can('pages_view')
+                            <a href="{{ route('admin_pages_edit', ['id' => $page->id]) }}" class="text-gray-800 text-hover-primary fw-bold">
+                                {{ $page->name }}
+                            </a>
+                            @else
+                            {{ $page->name }}
+                            @endcan
+                        </td>
+                        <td> {{ $page->title }}</td>
+                        <td> {{ $page->slug }}</td>
+                        {{-- Status --}}
+                        <td>
+                            @include('admin.elements.listStatus', ['data' => $page])
+                        </td>
+
+                        {{-- Actions --}}
+                        <td>
+                            @can('pages_update')
+                            <a href="{{ route('admin_pages_edit', ['id' => $page->id]) }}" class="btn btn-sm btn-light-primary">
+                                Edit
+                            </a>
+                            @endcan
+
+                            @can('pages_delete')
+                            @if($page->is_deletable == 1)
+                            <form action="{{ route('admin_pages_delete', ['id' => $page->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this page?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm btn-light-danger">Delete</button>
+                            </form>
+                            @endif
+                            @endcan
+                        </td>
+                    </tr>
+                    @endforeach
                 </tbody>
+
             </table>
         </div>
     </div>

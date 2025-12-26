@@ -19,7 +19,7 @@ use Yajra\DataTables\DataTables;
 class PagesController extends Controller
 {
 
-    public function list(PagesListRequest $request)
+    public function list(PagesListRequest $request, PagesRepository $pagesRepo)
     {
         $breadcrumbs = [
             ['name' => 'Pages'],
@@ -29,8 +29,9 @@ class PagesController extends Controller
         if ($request->category == 'faq') {
             $categoryId = 1;
         }
+        $pages = $pagesRepo->getPages($request->all())->get();
 
-        return view('admin.pages.listPages', compact('breadcrumbs', 'categoryId'));
+        return view('admin.pages.listPages', compact('breadcrumbs', 'categoryId','pages'));
     }
 
     public function table(PagesListDataRequest $request, PagesRepository $pagesRepo)

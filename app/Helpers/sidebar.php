@@ -12,6 +12,7 @@ if (!function_exists('sideMenu')) {
                 'active' => routeMatch([
                     'admin_contents_list', 'admin_contents_add', 'admin_contents_edit',
                     'admin_banner_list', 'admin_banner_add', 'admin_banner_edit',
+                    'admin_pages_list', 'admin_pages_add', 'admin_pages_edit',
                 ]),
                 'child' => [
                     [
@@ -25,6 +26,12 @@ if (!function_exists('sideMenu')) {
                         'permission' => ['banner_read'],
                         'active' => routeMatch(['admin_banner_list', 'admin_banner_add', 'admin_banner_edit']),
                         'url' => route('admin_banner_list'),
+                    ],
+                    [
+                        'name' => __('Pages'),
+                        'permission' => ['pages_read'],
+                        'active' => routeMatch(['admin_pages_list', 'admin_pages_add', 'admin_pages_edit']),
+                        'url' => route('admin_pages_list'),
                     ],
                 ],
             ],
