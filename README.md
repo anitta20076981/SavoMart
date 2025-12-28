@@ -1,1 +1,2 @@
 The back-end of the application is built using PHP Laravel. It handles API communication, data processing, business logic, and database integration, ensuring secure and efficient management of the application’s data. It also supports the front-end by providing dynamic content and performing necessary operations like authentication, data validation, and storage.
+http://64.227.165.60:8080/  : backend url
